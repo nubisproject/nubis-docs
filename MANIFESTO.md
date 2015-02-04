@@ -60,3 +60,31 @@ This is one of the key concepts that will make composability possible.
 
 * Isolated by default
 
+Whenever possible, systems should be built and deployed in isolation. Isolation means expecting to be deployed alone, being explicit about external dependencies and externally offered services.
+
+When two different systems need to cooperate to achieve results, we need to always ask ourselves if they would still make sense independently. And if so,
+we need to consider the effort in making them isolated from one another as the ideal goal.
+
+* Deployments are the norm, not the exception
+
+Deploying new functionality to an existing system is a normal part of a system's life. However, too often, this is an unusual process, filled with eceptions and special cases. It doesn't have to be.
+
+From the start of any project, continuous deployments should be the norm. The process an initial developer uses to quickly iterate on a system should be able to live with the project thru its lifetime.
+
+Deploying to production, deploying to a test setup, deploying to a different cloud provider, even, should be encapsulated in the exact same process, using the same tools.
+
+Also, from an operator's point of view, deploying a new version of something, whatever it is, should feel safe and identical. DNS Server or a complex web stack should appear to be the same in terms of deployments and rollback to the individual tasked with the task.
+
+* Bit for bit repeatability
+
+Most production systems life in multiple copies, sometimes called Development, Staging and Production. Too often these 3 environments claim at being the same, but fail in many subtle and not so subtle ways.
+
+Our ideal is to have 100% bit for bit repeatability between as many parallel environment as are needed. This means we should be running in Production the exact same bits as what was tested somewhere else.
+
+This is an ideal that will never be achieved fully, there will always be operationnal differences between environments. But this doesn't mean we should strive to keep these differences as few as possible, and ensure they are all known quantities, instead of possible unknowns.
+
+* Testing from the start
+
+* Monitor the things that actually matter
+
+
