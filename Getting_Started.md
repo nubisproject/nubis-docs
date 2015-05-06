@@ -1,10 +1,4 @@
-﻿# nubis-docs
-
-This repository is a collaborative documentation area for the Mozilla Nubis project. This projects main purpose is to build the tooling necessary to migrate a large number of legacy systems from corporate datacenters to the cloud.
-
-Feel free to look around. We appreciate any feedback or pull requests you feel would add to this effort.
-
-## Getting started with the Nubis Project
+﻿## Getting started with the Nubis Project
 Welcome to the Nubis Project. We hope you will find that it meats your requirements and is easy to use. In this document I will introduce you to the Nubis Project and give you a number of links to other documents that will help you along.
 
 The Nubis Project is in essence a framework for deploying applications to the cloud. At this time we support only Amazon Web Services (AWS). For an overview of our design principles I recommend you read out [manifesto](https://github.com/Nubisproject/nubis-docs/blob/master/MANIFESTO.md).
