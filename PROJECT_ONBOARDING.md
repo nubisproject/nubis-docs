@@ -4,13 +4,13 @@ This document is hear to guide us through the process of on-boarding your applic
 
 ### Checklist
 The steps we will take during this process are:
- 1. You [gather information](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Gather Information)
- 1. We [create your AWS account](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#create-account) in the Sandbox
- 1. You [generate your AWS API keys](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Generate API Keys)
- 1. Everyone [meets](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Meeting Time) to discuss architectural requirements / design
- 1. You [build out](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Application Build Out) your application in the Sandbox
- 1. You initiate the [promotion to Dev](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Promote to Dev) process
- 1. You initiate the [promotion to Prod](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Promote to Prod) process
+ 1. You [gather information](PROJECT_ONBOARDING.md#gather-information)
+ 1. We [create your AWS account](PROJECT_ONBOARDING.md#create-account) in the Sandbox
+ 1. You [generate your AWS API keys](PROJECT_ONBOARDING.md#generate-api-keys)
+ 1. Everyone [meets](PROJECT_ONBOARDING.md#meeting-time) to discuss architectural requirements / design
+ 1. You [build out](PROJECT_ONBOARDING.md#application-build-out) your application in the Sandbox
+ 1. You initiate the [promotion to Dev](PROJECT_ONBOARDING.md#promote-to-dev) process
+ 1. You initiate the [promotion to Prod](PROJECT_ONBOARDING.md#promote-to-prod) process
 
 ### Gather Information
 We need to know a few pieces of information about your application. This is used to track resources, for troubleshooting and for billing purposes. If you do not have all of this information, do not worry, we can help you figure it out. Once you have gathered all of this information you simply fill out [this form](link to Bugzilla form) to kick off the rest of the process.
