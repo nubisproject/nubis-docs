@@ -30,7 +30,7 @@ Once we have done that we will notify you by...
 > (how?).
 
 ### Generate API Keys
-Once you are logged into your new account you will need to generate an API key pair by following the instructions [here](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair). You will use this key pair to deploy resources (such as EC2 instances) into the sandbox. You should keep in mind that these keys are [secret](https://github.com/Nubisproject/nubis-docs/blob/master/SECURITY.md) and should not be shared with anyone.
+Once you are logged into your new account you will need to generate an API key pair by following the instructions [here](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html). You will use this key pair to deploy resources (such as EC2 instances) into the sandbox. You should keep in mind that these keys are [secret](https://github.com/Nubisproject/nubis-docs/blob/master/SECURITY.md) and should not be shared with anyone.
 
 ### Meeting Time
 We will schedule a kickoff meeting with all the necessary folks so we can all sit down and determine how we can help you to succeed. In this meeting we will discuss; design requirements, architectural needs, best practices and so on. Not to worry, we have a presentation all set up and will try to make this as painless as possible for you and your team.
