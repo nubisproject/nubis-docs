@@ -34,7 +34,7 @@ Once we have done that we will notify you by...
 > (how?).
 
 ### Generate API Keys
-Once you are logged into your new account you will need to generate an API key pair by following the instructions [here](link to API key section of account creation document). You will use this key pair to deploy resources (such as EC2 instances) into the sandbox. You should keep in mind that these keys are [secret](link to security best practices document) and should not be shared with anyone.
+Once you are logged into your new account you will need to generate an API key pair by following the instructions [here](link to API key section of account creation document). You will use this key pair to deploy resources (such as EC2 instances) into the sandbox. You should keep in mind that these keys are [secret](https://github.com/Nubisproject/nubis-docs/blob/master/SECURITY.md) and should not be shared with anyone.
 
 ### Meeting Time
 We will schedule a meeting with all the necessary folks so we can all sit down and determine how we can help you to succeed. In this meeting we will discuss; design requirements, architectural needs, best practices and so on. Not to worry, we have a presentation all set up and will try to make this as painless as possible for you and your team.
@@ -42,10 +42,10 @@ We will schedule a meeting with all the necessary folks so we can all sit down a
 ### Application Build Out
 Now that we have a design it is time to build the resources necessary to support your application. To assist you with your application build out we have prepared a number of documents.
 
- * First you will want to check out our [System Overview](link) document. It will give you a general sense of how all the pieces fit together.
- * Then I recommend you take a peek at our [Git & GitHub](https://github.com/Nubisproject/nubis-docs/blob/master/Git_GitHub.md) doc. This will aid you in setting up your repository for deploying with the Nubis Project.
+ * First you will want to check out our [System Overview](https://github.com/Nubisproject/nubis-docs/blob/master/SYSTEM_OVERVIEW.md) document. It will give you a general sense of how all the pieces fit together.
+ * Then I recommend you take a peek at our [Git & GitHub](https://github.com/Nubisproject/nubis-docs/blob/master/GIT_GITHUB.md) doc. This will aid you in setting up your repository for deploying with the Nubis Project.
  * Next you should peruse our [Nubis Builder](https://github.com/Nubisproject/nubis-builder/blob/master/README.md) document which covers building AMIs using [Packer](https://www.packer.io/) and [Puppet](https://puppetlabs.com/).
- * Finally you should take a gander at out [CloudFormation](https://github.com/Nubisproject/nubis-docs/blob/master/CloudFormation.md) document which covers things like using nested stacks to simplify your CloudFormation templates.
+ * Finally you should take a gander at out [CloudFormation](https://github.com/Nubisproject/nubis-docs/blob/master/CLOUDFORMATION.md) document which covers things like using nested stacks to simplify your CloudFormation templates.
 
 ### Promote to Dev
 The next step on the road to getting your application into production is to initiate the process to get it deployed into Dev. This should be a super simple process as long as you followed the best practices mentioned above. If so, you simply fill out [this little form](link to another Bugzilla form for promotion process) and we will do the rest. We will be setting up a Continuous Integration (CI) system to deploy your project into Dev. This CI system will deploy your application using the exact same CloudFormation templates that you use to deploy in the Sandbox. The process will go something like [this](https://mana.mozilla.org/wiki/display/EA/Environment+promotion).
