@@ -22,6 +22,6 @@ www.$ProjectName.sandbox.nubis.allizom.org
 
 You should now be able to load the site by placing that url in your browsers url bar.
 
-In order to ssh into your instance you will need to connect through a jumphost. These are in flux at the moment so in the mean time you will need to ping one of us in #infra-aws on [irc](irc.mozilla.org) for instructions.
+In order to ssh into your instance you will need to connect through a jumphost. These are in flux at the moment so in the mean time you will need to ping one of us in #infra-aws on irc.mozilla.org for instructions.
 
 Congratulations on your first Nubis deployment. Don't forget to delete your stack once you are done playing around to avoid excess billing charges.
