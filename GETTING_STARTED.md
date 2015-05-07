@@ -1,17 +1,11 @@
-﻿# nubis-docs
-
-This repository is a collaborative documentation area for the Mozilla Nubis project. This projects main purpose is to build the tooling necessary to migrate a large number of legacy systems from corporate datacenters to the cloud.
-
-Feel free to look around. We appreciate any feedback or pull requests you feel would add to this effort.
-
-## Getting started with the Nubis Project
+﻿## Getting started with the Nubis Project
 Welcome to the Nubis Project. We hope you will find that it meats your requirements and is easy to use. In this document I will introduce you to the Nubis Project and give you a number of links to other documents that will help you along.
 
 The Nubis Project is in essence a framework for deploying applications to the cloud. At this time we support only Amazon Web Services (AWS). For an overview of our design principles I recommend you read out [manifesto](https://github.com/Nubisproject/nubis-docs/blob/master/MANIFESTO.md).
 
 ### Familiarize yourself with the Nubis Project
 Now, to get you up to speed with everything you will need to know to use the Nubis Project, I will provide for you a reading list. Not to worry, while this list looks long most of the documents are quite short.
-* [Nubis Overview](https://github.com/Nubisproject/nubis-docs/blob/master/SYSTEM_OVERVIEW.md) Will give you an outline of the pieces of the project.
+* [Nubis Overview](WRITE_ME) Will give you an outline of the pieces of the project.
 * [Git & GitHub](https://github.com/Nubisproject/nubis-docs/blob/master/GIT_GITHUB.md) provides some advice specific to Nubis.
 * [CloudFormation](https://github.com/Nubisproject/nubis-docs/blob/master/CLOUDFORMATION.md) walks through some recomendations on structure and workflow.
 * [Project Onbording](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md) will guide you through onboarding your first application.
