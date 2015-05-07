@@ -4,13 +4,13 @@ This document is hear to guide us through the process of on-boarding your applic
 
 ### Checklist
 The steps we will take during this process are:
- 1. You [gather information](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Gather Information)
- 1. We [create your AWS account](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#create-account) in the Sandbox
- 1. You [generate your AWS API keys](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Generate API Keys)
- 1. Everyone [meets](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Meeting Time) to discuss architectural requirements / design
- 1. You [build out](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Application Build Out) your application in the Sandbox
- 1. You initiate the [promotion to Dev](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Promote to Dev) process
- 1. You initiate the [promotion to Prod](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Promote to Prod) process
+ 1. You [gather information](PROJECT_ONBOARDING.md#gather-information)
+ 1. We [create your AWS account](PROJECT_ONBOARDING.md#create-account) in the Sandbox
+ 1. You [generate your AWS API keys](PROJECT_ONBOARDING.md#generate-api-keys)
+ 1. Everyone [meets](PROJECT_ONBOARDING.md#meeting-time) to discuss architectural requirements / design
+ 1. You [build out](PROJECT_ONBOARDING.md#application-build-out) your application in the Sandbox
+ 1. You initiate the [promotion to Dev](PROJECT_ONBOARDING.md#promote-to-dev) process
+ 1. You initiate the [promotion to Prod](PROJECT_ONBOARDING.md#promote-to-prod) process
 
 ### Gather Information
 We need to know a few pieces of information about your application. This is used to track resources, for troubleshooting and for billing purposes. If you do not have all of this information, do not worry, we can help you figure it out. Once you have gathered all of this information you simply fill out [this form](link to Bugzilla form) to kick off the rest of the process.
@@ -44,6 +44,9 @@ Now that we have a design it is time to build the resources necessary to support
  * Next you should peruse our [Nubis Builder](https://github.com/Nubisproject/nubis-builder/blob/master/README.md) document which covers building AMIs using [Packer](https://www.packer.io/) and [Puppet](https://puppetlabs.com/).
  * Finally you should take a gander at out [CloudFormation](https://github.com/Nubisproject/nubis-docs/blob/master/CLOUDFORMATION.md) document which covers things like using nested stacks to simplify your CloudFormation templates.
 
+<br>
+Armed with this informtation you can start to craft a CloudFormation template for your application. For an example check out the nubis-mediawiki project [template](https://github.com/Nubisproject/nubis-mediawiki/blob/master/nubis/cloudformation/main.json).
+ 
 ### Promote to Dev
 The next step on the road to getting your application into production is to initiate the process to get it deployed into Dev. This should be a super simple process as long as you followed the best practices mentioned above. If so, you simply fill out [this little form](link to another Bugzilla form for promotion process) and we will do the rest. We will be setting up a Continuous Integration (CI) system to deploy your project into Dev. This CI system will deploy your application using the exact same CloudFormation templates that you use to deploy in the Sandbox. The process will go something like [this](https://mana.mozilla.org/wiki/display/EA/Environment+promotion).
 
