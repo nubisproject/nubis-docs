@@ -21,13 +21,13 @@ Now that you are familiar with the project and the process it is time to get cod
 
 As we have seen in various examples through these documents, you will need to create a deployment repository. Take a look at the [System Overview](link) document for details.
 
-Once your repository is all set up the next step it to deploy into the sandbox. You can deploy bu following the procedures outlined in the [Project Onbording](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Application Build Out) doc. Some example commands can be found in our trusty [nubis-mediawiki](https://github.com/Nubisproject/nubis-mediawiki/blob/master/nubis/cloudformation/README.md) repository.
+Once your repository is all set up the next step it to deploy into the sandbox. You can deploy by following the procedures outlined in the [Project Onbording](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Application Build Out) doc. Some example commands can be found in our trusty [nubis-mediawiki](https://github.com/Nubisproject/nubis-mediawiki/blob/master/nubis/cloudformation/README.md) repository.
 
 
 ### Bugs, Contributions and more
 We are super excited to have you hear. If you have stumbled into an issue there are several ways to address it.
 
-First, you can fix the issue yourself and file a pull request. You will find a guild in our [Contributing Doc]((https://github.com/Nubisproject/nubis-docs/blob/master/CONTRIBUTING.md).
+First, you can fix the issue yourself and file a pull request. You will find a guild in our [Contributing Doc](https://github.com/Nubisproject/nubis-docs/blob/master/CONTRIBUTING.md).
 
 Next, you can file an issue. Simply navigate to the Nubis Project space on Github [here](https://github.com/Nubisproject), select the appropriate repository and click on the issues link. For example to file an issue against nubis-stacks you would go [here](https://github.com/Nubisproject/nubis-stacks/issues)
 

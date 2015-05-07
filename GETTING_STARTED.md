@@ -5,7 +5,7 @@ The Nubis Project is in essence a framework for deploying applications to the cl
 
 ### Familiarize yourself with the Nubis Project
 Now, to get you up to speed with everything you will need to know to use the Nubis Project, I will provide for you a reading list. Not to worry, while this list looks long most of the documents are quite short.
-* [Nubis Overview](WRITE_ME) will give you an outline of the pieces of the project.
+* [Nubis Overview](https://github.com/Nubisproject/nubis-docs/blob/master/SYSTEM_OVERVIEW.md) will give you an outline of the pieces of the project.
 * [Git & GitHub](https://github.com/Nubisproject/nubis-docs/blob/master/GIT_GITHUB.md) provides some advice specific to Nubis.
 * [CloudFormation](https://github.com/Nubisproject/nubis-docs/blob/master/CLOUDFORMATION.md) walks through some recomendations on structure and workflow.
 * [Prerequisites](https://github.com/Nubisproject/nubis-docs/blob/master/PREREQUISITES.md) will get you set up with all the necessary tools.
@@ -22,7 +22,7 @@ Once your repository is all set up the next step it to deploy into the sandbox. 
 ### Bugs, Contributions and more
 We are super excited to have you hear. If you have stumbled into an issue there are several ways to address it.
 
-First, you can fix the issue yourself and file a pull request. You will find a guild in our [Contributing Doc]((https://github.com/Nubisproject/nubis-docs/blob/master/CONTRIBUTING.md).
+First, you can fix the issue yourself and file a pull request. You will find a guild in our [Contributing Doc](https://github.com/Nubisproject/nubis-docs/blob/master/CONTRIBUTING.md).
 
 Next, you can file an issue. Simply navigate to the Nubis Project space on Github [here](https://github.com/Nubisproject), select the appropriate repository and click on the issues link. For example to file an issue against nubis-stacks you would go [here](https://github.com/Nubisproject/nubis-stacks/issues)
 
