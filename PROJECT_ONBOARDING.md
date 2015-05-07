@@ -44,6 +44,7 @@ Now that we have a design it is time to build the resources necessary to support
 
  * First you will want to check out our [System Overview](https://github.com/Nubisproject/nubis-docs/blob/master/SYSTEM_OVERVIEW.md) document. It will give you a general sense of how all the pieces fit together.
  * Then I recommend you take a peek at our [Git & GitHub](https://github.com/Nubisproject/nubis-docs/blob/master/GIT_GITHUB.md) doc. This will aid you in setting up your repository for deploying with the Nubis Project.
+ * [Prerequisites](https://github.com/Nubisproject/nubis-docs/blob/master/PREREQUISITES.md) will get you set up with all the necessary tools.
  * Next you should peruse our [Nubis Builder](https://github.com/Nubisproject/nubis-builder/blob/master/README.md) document which covers building AMIs using [Packer](https://www.packer.io/) and [Puppet](https://puppetlabs.com/).
  * Finally you should take a gander at out [CloudFormation](https://github.com/Nubisproject/nubis-docs/blob/master/CLOUDFORMATION.md) document which covers things like using nested stacks to simplify your CloudFormation templates.
 

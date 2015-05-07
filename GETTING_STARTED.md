@@ -5,9 +5,10 @@ The Nubis Project is in essence a framework for deploying applications to the cl
 
 ### Familiarize yourself with the Nubis Project
 Now, to get you up to speed with everything you will need to know to use the Nubis Project, I will provide for you a reading list. Not to worry, while this list looks long most of the documents are quite short.
-* [Nubis Overview](WRITE_ME) Will give you an outline of the pieces of the project.
+* [Nubis Overview](WRITE_ME) will give you an outline of the pieces of the project.
 * [Git & GitHub](https://github.com/Nubisproject/nubis-docs/blob/master/GIT_GITHUB.md) provides some advice specific to Nubis.
 * [CloudFormation](https://github.com/Nubisproject/nubis-docs/blob/master/CLOUDFORMATION.md) walks through some recomendations on structure and workflow.
+* [Prerequisites](https://github.com/Nubisproject/nubis-docs/blob/master/PREREQUISITES.md) will get you set up with all the necessary tools.
 * [Project Onbording](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md) will guide you through onboarding your first application.
 
 ### Deployment
