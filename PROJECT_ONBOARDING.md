@@ -44,6 +44,9 @@ Now that we have a design it is time to build the resources necessary to support
  * Next you should peruse our [Nubis Builder](https://github.com/Nubisproject/nubis-builder/blob/master/README.md) document which covers building AMIs using [Packer](https://www.packer.io/) and [Puppet](https://puppetlabs.com/).
  * Finally you should take a gander at out [CloudFormation](https://github.com/Nubisproject/nubis-docs/blob/master/CLOUDFORMATION.md) document which covers things like using nested stacks to simplify your CloudFormation templates.
 
+<br>
+Armed with this informtation you can start to craft a CloudFormation template for your application. For an example check out the nubis-mediawiki project [template](https://github.com/Nubisproject/nubis-mediawiki/blob/master/nubis/cloudformation/main.json).
+ 
 ### Promote to Dev
 The next step on the road to getting your application into production is to initiate the process to get it deployed into Dev. This should be a super simple process as long as you followed the best practices mentioned above. If so, you simply fill out [this little form](link to another Bugzilla form for promotion process) and we will do the rest. We will be setting up a Continuous Integration (CI) system to deploy your project into Dev. This CI system will deploy your application using the exact same CloudFormation templates that you use to deploy in the Sandbox. The process will go something like [this](https://mana.mozilla.org/wiki/display/EA/Environment+promotion).
 
