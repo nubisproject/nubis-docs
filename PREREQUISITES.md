@@ -44,7 +44,7 @@ At this point you should test this tool like so:
 aws cloudformation list-stacks
 ```
 
-If you get a JSON formated list of stacks back, congratulations, you can move on. If you got an error, you will need to do a bit of troubleshooting. Some of the most common issues tend to be conflicting [boto](https://github.com/boto/boto) configurations or old aws-cfn-tools configured (check for an ~/.aws/ec2.env file). If you get an authentication error, go back and confirm you have correctly set up your [AWS Credentials](#AWS Credentials).
+If you get a JSON formated list of stacks back, congratulations, you can move on. If you got an error, you will need to do a bit of troubleshooting. Some of the most common issues tend to be conflicting [boto](https://github.com/boto/boto) configurations or old aws-cfn-tools configured (check for an ~/.aws/ec2.env file). If you get an authentication error, go back and confirm you have correctly set up your [AWS Credentials](#aws-credentials).
 
 ### nubis-builder
 This is a collection of tools we built to drive Packer, greatly simplifying Packer configuration. It's fairly simple to install and comes with a few of its own dependencies that you will need to install.
