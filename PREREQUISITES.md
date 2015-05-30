@@ -6,7 +6,7 @@ Nubis is entirely hosted on github, and we derive most of our workflows from Git
 
 If you are new to git or GitHub, you are probably better familiarizing yourself with that first.
 
-You don't strictly speaking need a GitHub account, but if you plan on contributing back, you'll need one. It doesn't have to be special, just any old account will do.
+You don't strictly speaking need a GitHub account, but if you plan on contributing back, you'll need one. It doesn't have to be special, just any old account will do. To set up for a GitHub account, click [here](https://github.com/join).
 
 ### git
 All our source-control is in Git, so you'll need a git client of some kind. Most distributions include a git client that you can install with your package manager. You can also get git directly from their [downloads site](https://git-scm.com/downloads).
