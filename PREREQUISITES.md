@@ -4,9 +4,11 @@ Before you can contribute to the Nubis project, you'll need to have a set of too
 ### GitHub Account
 Nubis is entirely hosted on github, and we derive most of our workflows from GitHub's recommended practices.
 
-If you are new to git or GitHub, you are probably better familiarizing yourself with that first.
+If you are new to git or GitHub, you are probably better familiarizing yourself with that first. There are a lot of handy tutorials straight from the source [here](https://www.atlassian.com/git/tutorials/)
 
-You don't strictly speaking need a GitHub account, but if you plan on contributing back, you'll need one. It doesn't have to be special, just any old account will do. To set up for a GitHub account, click [here](https://github.com/join).
+Firts you will need to set up an account on GitHub. It doesn't have to be anything special, any old account will do. To set up a GitHub account, click [here](https://github.com/join).
+
+You will also want to set up your ssh keys with GitHub. You can do that [here](https://github.com/settings/ssh).
 
 ### git
 All our source-control is in Git, so you'll need a git client of some kind. Most distributions include a git client that you can install with your package manager. You can also get git directly from their [downloads site](https://git-scm.com/downloads).
