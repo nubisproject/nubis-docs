@@ -36,7 +36,7 @@ nubis-consul --stack-name nubis-xxx --settings nubis/cloudformation/parameters.j
 https://github.com/tinnightcap/nubis-dpaste/blob/master/nubis/cloudformation/README.md#update-consul
 
 ## Slide 13:
-ssh -A -t ec2-user@jumphost.sandbox.nubis.allizom.org "ssh -A -t ubuntu@$(nubis-consul --stack-name nubis-xxx --settings nubis/cloudformation/parameters.json get-ec2-instance-ip)"
+ssh -A -t ec2-user@jumphost.sandbox.us-west-2.nubis.allizom.org "ssh -A -t ubuntu@$(nubis-consul --stack-name nubis-xxx --settings nubis/cloudformation/parameters.json get-ec2-instance-ip)"
 
 https://github.com/tinnightcap/nubis-dpaste/blob/master/nubis/cloudformation/README.md#login
 
