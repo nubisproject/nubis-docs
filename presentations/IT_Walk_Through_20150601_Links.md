@@ -16,7 +16,7 @@ https://github.com/Nubisproject/nubis-dpaste
 
 git clone git@github.com:YOU/nubis-dpaste.git
 
-git submodule update –init --recursive
+git submodule update --init --recursive
 
 ## Slide 10:
 nubis-builder build
