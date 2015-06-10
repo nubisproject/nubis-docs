@@ -19,7 +19,7 @@ Now, to get you up to speed with everything you will need to know to use the Nub
 ### Deployment
 Now that you are familiar with the project and the process it is time to get coding. The first step is to assemble your deployment repository. Then it will be time to deploy into the sandbox.
 
-As we have seen in various examples through these documents, you will need to create a deployment repository. Take a look at the [System Overview](link) document for details.
+As we have seen in various examples through these documents, you will need to create a deployment repository. Take a look at the [System Overview](https://github.com/Nubisproject/nubis-docs/blob/master/SYSTEM_OVERVIEW.md) document for details.
 
 Once your repository is all set up the next step it to deploy into the sandbox. You can deploy by following the procedures outlined in the [Project Onbording](https://github.com/Nubisproject/nubis-docs/blob/master/PROJECT_ONBOARDING.md#Application Build Out) doc. Some example commands can be found in our trusty [nubis-mediawiki](https://github.com/Nubisproject/nubis-mediawiki/blob/master/nubis/cloudformation/README.md) repository.
 
