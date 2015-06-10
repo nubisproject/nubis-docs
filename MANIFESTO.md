@@ -88,6 +88,6 @@ We intend to build unit tests from the start, which will be used by our continuo
 
 ## Monitor the things that actually matter
 
-Taken to the extreme we could say that is does not matter how much ram is in use or weather an instance is heavily into swap. What actually matters it weather the system is, say, responsive.
+Taken to the extreme we could say that is does not matter how much ram is in use or whether an instance is heavily into swap. What actually matters it whether the system is, say, responsive.
 
 Ideally we will use tests and metrics to monitor the things that actually matter in terms of *usability*. This may include data from many sources, including system resources. We will use this data to inform auto-scaling and tooling to adapt to the changing conditions. Humans will be alerted only when the system can not fix itself in an automated or scripted way.
