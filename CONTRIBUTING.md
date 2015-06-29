@@ -64,6 +64,12 @@ This is a request for enhancement to an existing feature. It represent something
 
  Default GitHub label used to close an issue as a dupliate of another one.
 
+#### Issue Milestones
+
+Milestones are used to track Nubis releases, and **only** repository owners should be allowed to assign them to issues.
+
+Each issue that is slated for inclusion in a particular Nubis release will be assigned to the Milestone that corresponds to that release during the triage and planning process.
+
 #### Fork the appropriate repository
 
 No real work should happen directly on the main Nubis repositories. You should be doing things in a personal fork of these repositories. So fork away, if not something you've already done before.
