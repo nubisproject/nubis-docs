@@ -106,6 +106,8 @@ Once you are ready, you should submit a pull-request to the repository you forke
 
 Remember, you are feeding this to another fellow human who will review your work. Take the time to make the pull-request contain what you think would be the best information necessary to make the job of the reviewer easier. Explain what you are doing, if there are tricky bits, point them out, etc.
 
+The only writes to the official Nubis repositories will be the merging of pull-requests. Feature branches are not mandatory, but highly recommended.
+
 #### Repeat
 
 At this point, it's almost done. Be prepared for possibly some back and forth with the reviewer. There might be questions about bits of code, for instance.
