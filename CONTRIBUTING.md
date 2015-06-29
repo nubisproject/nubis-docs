@@ -118,6 +118,20 @@ Or there might be requests for changes or fixes to your work. In that case, it's
 
 Once the review completes successfully, your branch will be merged back into the master branch of the Nubis repository, and your work will be included in the next official image builds.
 
+## Commiters
+
+Each repository has a Commiter Team, whose members are allowed to merge pull-requests into the repository.
+
+*Note*: It's bad practice to merge your own pull-requests, as that defeats the review process.
+
+Adding/Removing a member to that Team is the result of a majority vote among existing members.
+
+(Comitter Agreement and Agreement to follow establish processes, etc)
+
+Each Team also has an appointed Technical Lead that holds a tie-breaking vote on that repository.
+
+Commit access is a privilege, not a right. It's is earned by one's contributions and the quality of the work produced. It's all about the quality and health of the project, nothing less, nothing more.
+
 ## TODO: More concrete examples
 * Bug Fixes
 * Improvements
