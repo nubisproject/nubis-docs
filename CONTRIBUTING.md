@@ -21,6 +21,47 @@ That should always be the first step. You found a bug, you thought of a new feat
 
 This will help keep track of the work being done while at the same time giving better visibility to the rest of the Nubis contributors.
 
+#### Issue Labels
+
+Issues labels are standardized across Nubis repositories and are used to classify the type of work:
+
+ * bug
+
+This is reserved for issues that represent a defect in an existing functionality. Small of big, if something is not behaving as it should, it's a bug.
+
+ * enhancement
+
+This is a request for enhancement to an existing feature. It represent something that is not broken, but an opportunity for improvement.
+
+ * feature
+
+ This is a request for a brand new feature. When requesting that Nubis do something it doesn't do before, it's a feature request.
+
+ * docs
+
+ Issues representing the need to document something, new or old. Improvements to existing documentation, or request for documenting something that currently isn't.
+
+ * question
+
+ Issues that are asking a specific question about Nubis. It could be a request to better explain something, or the begging of a discussion about how to approach a certain problem or possible feature.
+
+ * decision
+
+ Issues marked as questions that result in a concrete decision for the project. This label is used to mark the issue as decided, generally spawning a few more issues for implementation or documentation of what has been decided.
+
+ * upgrade
+
+ Issues reserved for upgrades to external Nubis components included. This could be puppet modules, software packages, etc.
+ Generally, these issues will be very log hanging fruits, requiring the bump of a version number somewhere and some testing.
+
+ * invalid
+
+ Default GitHub label used to close issues that are not going to be adressed or are simply invalid.
+
+ * duplicate
+
+ Default GitHub label used to close an issue as a dupliate of another one.
+
 #### Fork the appropriate repository
 
 No real work should happen directly on the main Nubis repositories. You should be doing things in a personal fork of these repositories. So fork away, if not something you've already done before.
