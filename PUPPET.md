@@ -31,9 +31,9 @@ This way, you keep things nice and separated. If you discover that your webserve
 
 You have access to many puppet modules when building Nubis projects, they are baked into the base images and made avaialble automatically when you build images of your own.
 
-For the most up-to-date list of modules available, see https://github.com/Nubisproject/nubis-puppet/blob/master/Puppetfile
+For the most up-to-date list of modules available, see https://github.com/Nubisproject/nubis-base/blob/master/nubis/Puppetfile
 
-If you believe you could benefit from a new puppet module, or a newer version of an included one, just head over to https://github.com/Nubisproject/nubis-puppet and file an issue.
+If you believe you could benefit from a new puppet module, or a newer version of an included one, just head over to https://github.com/Nubisproject/nubis-base and file an issue.
 
 ## nubis/Puppetfile
 
@@ -41,7 +41,7 @@ You are allowed to create your own *Puppetfile* in your project, and *nubis-buil
 
 However, this is not recommended for production. This will just copy a new module on top of the baked-in modules in the base images, and could cause conflicts and mess up dependencies for other modules.
 
-It's a quick and dirty way to test if an upgrade to a puppet module will work for you, and also a good way to try out a new module for possible inclusion in nubis-puppet.
+It's a quick and dirty way to test if an upgrade to a puppet module will work for you, and also a good way to try out a new module for possible inclusion in nubis-base.
 
 But otherwise, stay away from that if you can.
 
