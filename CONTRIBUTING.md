@@ -21,6 +21,8 @@ That should always be the first step. You found a bug, you thought of a new feat
 
 This will help keep track of the work being done while at the same time giving better visibility to the rest of the Nubis contributors.
 
+Issues are required for all bugs, features and enhancement. A pull-request will not be merged if it doesn't close an existing issue.
+
 #### Issue Labels
 
 Issues labels are standardized across Nubis repositories and are used to classify the type of work:
