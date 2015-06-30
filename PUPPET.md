@@ -27,6 +27,22 @@ You can put as many manifests as you want in there, but we recommend you try and
 
 This way, you keep things nice and separated. If you discover that your webserver manifest needs to know something about the smtp manifest, try and not refer from one to the next. Instead, use the main.pp manifest to glue them together, passing values in and out of them, if necessary.
 
+## nubis/puppet/files
+
+If you place files under *nubis/puppet/files*, they will be automatically copied over the instance, before puppet is invoked.
+
+Once puppet runs, you can access the files you placed in there with the usual puppet syntax in your puppet .pp files:
+
+    source => "puppet:///nubis/files/my-file"
+
+## nubis/puppet/templates
+
+If you place templates under *nubis/puppet/templates*, they will be automatically copied over the instance, before puppet is invoked.
+
+Once puppet runs, you can access the templates you placed in there with the usual puppet syntax in your puppet .pp files:
+
+    source => "puppet:///nubis/templates/my-file"
+
 ## puppet-modules
 
 You have access to many puppet modules when building Nubis projects, they are baked into the base images and made avaialble automatically when you build images of your own.

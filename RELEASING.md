@@ -51,3 +51,9 @@ repository members, and we encourage the mentality of release often, release ear
 Major releases, since they require coordination between repositories, will be less frequent. However, we are not
 ready yet to commit to a specific time-based cadence. Major releases will happen organically, as we define and complete
 the milestones for them.
+
+## Announcing
+
+Sometimes, like when making a new release, it can be desired to reach all Nubis Users. The current day-to-day mechanism to communicate with Nubis users is on the #nubis-users channel on irc.mozilla.org
+
+However, for more official announcements, or information that needs more reasonable delivery guarantees than IRC, we use the [nubis-announce](https://groups.google.com/d/forum/nubis-announce) distribution list. It can be reached at [nubis-announce@googlegroups.com](nubis-announce@googlegroups.com)
