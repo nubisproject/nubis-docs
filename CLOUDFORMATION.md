@@ -14,7 +14,7 @@ By utilizing stack outputs we are able to minimize the number of parameters (AWS
 |---------------|-------------|
 |ServiceName    | Name of service from [here](https://inventory.mozilla.org/en-US/core/service/)
 |Environment    | Sandbox or Dev or Prod
-|KeyName        | Name of ssh key to install on ec2 instances
+|SSHKeyName     | Name of AWS ssh key to install on ec2 instances
 |TechnicalOwner | Email address or distribution list
 |AmiId          | ID output from nubis-builder
 
