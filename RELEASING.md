@@ -16,9 +16,26 @@ There can also be an extra postfix to the version number, added to describe the 
  * v1.2.3-devel
  * v1.5.5-preview
 
- ### Code names
+### Code names
 
  Release code-names might be exist, but will be used for purely cosmetic purposes. The *Happy Panda* release would just be a name for the v1.5.0 release.
+
+### Managment
+
+For each Milestone, one of the Tech Leads takes on the Release Manager Hat.
+
+That Release Manager is responsible for triaging what makes it into that Release, with input from the rest of the team. 
+
+Generally, it makes sense for each Milestone to represent a logical and descriptive amount of work. For example, a Milestone
+could be about documentation, bug fixes, implementing a big new feature, refactoring, etc.
+
+There is no specific defined time limit for a Milestone, but when it's created and issues triaged into it, it should be
+factored in. Milestones that take too much time to complete are a bad practice. Better to split up work in multiple Milestones,
+sequentially reached, instead of one big-bad Milestone.
+
+For that Release, the Release Manager gains a veto, solely for purposed of tie-breaking project blocking/delaying issues.
+
+The ultimate role of the Release Manager is to successfully complete the Milestone, with the help of the development team.
 
 ## Tags
 
