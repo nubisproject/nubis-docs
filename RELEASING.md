@@ -43,6 +43,15 @@ The process is really simple and will look like this:
 
     $> github_changelog_generator --future-release v1.0.0 nubisproject/nubis-docs
 
+## Cadence
+
+For the time being, minor releases will not be on a schedule. They will be the responsability of the respective
+repository members, and we encourage the mentality of release often, release early.
+
+Major releases, since they require coordination between repositories, will be less frequent. However, we are not
+ready yet to commit to a specific time-based cadence. Major releases will happen organically, as we define and complete
+the milestones for them.
+
 ## Announcing
 
 Sometimes, like when making a new release, it can be desired to reach all Nubis Users. The current day-to-day mechanism to communicate with Nubis users is on the #nubis-users channel on irc.mozilla.org
