@@ -47,4 +47,4 @@ The process is really simple and will look like this:
 
 Sometimes, like when making a new release, it can be desired to reach all Nubis Users. The current day-to-day mechanism to communicate with Nubis users is on the #nubis-users channel on irc.mozilla.org
 
-However, for more official announcements, or information that needs more reasonable delivery guarantees than IRC, we use the [https://groups.google.com/d/forum/nubis-announce](nubis-announce) distribution list. It can be reached at [nubis-announce@googlegroups.com](nubis-announce@googlegroups.com)
+However, for more official announcements, or information that needs more reasonable delivery guarantees than IRC, we use the [nubis-announce](https://groups.google.com/d/forum/nubis-announce) distribution list. It can be reached at [nubis-announce@googlegroups.com](nubis-announce@googlegroups.com)
