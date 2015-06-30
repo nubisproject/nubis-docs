@@ -116,6 +116,26 @@ Remember, you are feeding this to another fellow human who will review your work
 
 The only writes to the official Nubis repositories will be the merging of pull-requests. Feature branches are not mandatory, but highly recommended.
 
+#### Code Review
+
+Every Pull-Request needs to be reviewed (+1) by at least one committer before being allowed to be merged in. This process is still being formalized, and currently relies on the knoledge and experience of the current members of the project.
+
+But, code reviews will at a minimum include these:
+
+ * Code needs to be polished and of acceptable quality
+ * Code needs to conform to the projet's coding standards and design principles
+ * Code needs to follow a reasonably consistent indentation style
+ * Code needs to be atomic ( Each Pull-Request should implement one feature or fix one bug )
+ * Whitespace/indentation changes should be handled separately, to keep the noise of the review request down.
+
+Conversation on the pull-requests is encouraged to improve the qualiy of the request prior to merging it. Anybody is welcome to add feedback and/or questions to open pull-requests.
+
+It is the responsability of the submitter of the pull-request to address the issues raised during the review, if they want to see their pull-request successfully merged.
+
+Code is written by people, but it's important to remember that reviews are about the work, not the person. Stay civil and polite, and remember that it's an evaluation of the code and how to help include it in the project.
+
+The objective of any code review, for the reviewer, should be focused on helping the submitter to get his work included into the project.
+
 #### Repeat
 
 At this point, it's almost done. Be prepared for possibly some back and forth with the reviewer. There might be questions about bits of code, for instance.
