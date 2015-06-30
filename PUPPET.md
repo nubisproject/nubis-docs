@@ -37,9 +37,9 @@ Once puppet runs, you can access the files you placed in there with the usual pu
 
 ## nubis/puppet/templates
 
-If you place files under *nubis/puppet/templates*, they will be automatically copied over the instance, before puppet is invoked.
+If you place templates under *nubis/puppet/templates*, they will be automatically copied over the instance, before puppet is invoked.
 
-Once puppet runs, you can access the files you placed in there with the usual puppet syntax in your puppet .pp files:
+Once puppet runs, you can access the templates you placed in there with the usual puppet syntax in your puppet .pp files:
 
     source => "puppet:///nubis/templates/my-file"
 
