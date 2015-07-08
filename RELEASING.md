@@ -1,10 +1,10 @@
-# Nubis - Relase Managment
+﻿# Nubis - Release Management
 
-This is a document that helps explain all the process involved in Release Managment for the Nubis project. If you are not planning to make a Nubis release, you can safely ignore this document, unless you are curious.
+This is a document that helps explain all the process involved in Release Management for the Nubis project. If you are not planning to make a Nubis release, you can safely ignore this document, unless you are curious.
 
 ## Milestones
 
-Milestones are used to track a given Nubis release. Issues that will be part of that relase will be assigned to the corresponding Milestone.
+Milestones are used to track a given Nubis release. Issues that will be part of that release will be assigned to the corresponding Milestone.
 
 ### Format
 
@@ -47,7 +47,7 @@ All tags will be [GPG Signed](https://git-scm.com/book/tr/v2/Git-Tools-Signing-Y
 
 Each Nubis repository is allowed to follow it's own minor release tagging schedule.
 
-Major release bumps (i.e, from v0.9.2 to v1.0.0) will be coordinated across all repositories, to provide a consistent versionning scheme for each major Nubis Project release.
+Major release bumps (i.e, from v0.9.2 to v1.0.0) will be coordinated across all repositories, to provide a consistent versioning scheme for each major Nubis Project release.
 
 ## Changelogs
 
@@ -62,7 +62,7 @@ The process is really simple and will look like this:
 
 ## Cadence
 
-For the time being, minor releases will not be on a schedule. They will be the responsability of the respective
+For the time being, minor releases will not be on a schedule. They will be the responsibility of the respective
 repository members, and we encourage the mentality of release often, release early.
 
 Major releases, since they require coordination between repositories, will be less frequent. However, we are not
@@ -74,3 +74,51 @@ the milestones for them.
 Sometimes, like when making a new release, it can be desired to reach all Nubis Users. The current day-to-day mechanism to communicate with Nubis users is on the #nubis-users channel on irc.mozilla.org
 
 However, for more official announcements, or information that needs more reasonable delivery guarantees than IRC, we use the [nubis-announce](https://groups.google.com/d/forum/nubis-announce) distribution list. It can be reached at [nubis-announce@googlegroups.com](nubis-announce@googlegroups.com)
+
+
+## Process
+When it comes time to create a release; all pull-requests related to this release have been merged, the chnagelog has been generated and all tests have passed, you are ready to cut a release.
+
+This is the only time you will need to operate on an origin branch directly. This is different from the normal pull-request based work-flow in that tags can not be associated with a pull-request. Also this process is described using the master branch, you may wish to use a feature branch for your release work.
+
+The first thing you will need to do is set up your branches in a manner similar to the following. That is one branch, I have called master, which is tracking your fork and one branch, I have called originmaster, tracking the master branch from the nubisproject origin. You can call these whatever you like, however these instructions will assume you have named them as shown here.
+
+```bash
+git branch -avv
+* master        0645ce9 [tinnightcap/master] Update changelog for v0.9.0-beta1 release
+  originmaster  7a8254d [origin/master] Merge pull request #8 from tinnightcap/master
+```
+
+Next you will need to ensure that your origin branch is current. Note that all pull-requests for this release need to have been merged onto the origin prior to this step. This includes having generated the changelog, committed it, created a pull-request, having had it code-reviewed and merged. Simply fetch and rebase.
+```bash
+git checkout master
+git fetch origin
+git rebase origin/master
+```
+
+Now we are ready to create the release using a signed tag as described [above](#tags). In this case I am creating a beta release for testing in advance of the v0.9.0 release.
+```bash
+git tag -s v0.9.0-beta -m"Tag beta release for upcoming v0.9.0 release"
+```
+
+Push the tag to your fork for testing. You should validate that the release files (.tar.gz & .zip) are working as expected and that there are no collisions or typos. You should be able to safely rename or delete tags from your fork, however once they are pushed to the origin they should no longer be deleted. You should ensure things are correct prior to continuing on to the next step. If you have any doubt, have your tags code-reviewed prior to continuing on.
+```bash
+git push --tags
+```
+
+Switch to the originmaster branch.
+```bash
+git checkout originmaster
+```
+
+Make sure this branch is up to date.
+```bash
+git pull
+```
+
+Finally push the signed tag to the origin.
+```bash
+git push --tags
+```
+
+That is it. You should verify once more that the release files are correct and send updates as appropriate.
