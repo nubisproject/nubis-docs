@@ -1,10 +1,10 @@
-# Nubis - Relase Managment
+﻿# Nubis - Release Management
 
-This is a document that helps explain all the process involved in Release Managment for the Nubis project. If you are not planning to make a Nubis release, you can safely ignore this document, unless you are curious.
+This is a document that helps explain all the process involved in Release Management for the Nubis project. If you are not planning to make a Nubis release, you can safely ignore this document, unless you are curious.
 
 ## Milestones
 
-Milestones are used to track a given Nubis release. Issues that will be part of that relase will be assigned to the corresponding Milestone.
+Milestones are used to track a given Nubis release. Issues that will be part of that release will be assigned to the corresponding Milestone.
 
 ### Format
 
@@ -47,7 +47,7 @@ All tags will be [GPG Signed](https://git-scm.com/book/tr/v2/Git-Tools-Signing-Y
 
 Each Nubis repository is allowed to follow it's own minor release tagging schedule.
 
-Major release bumps (i.e, from v0.9.2 to v1.0.0) will be coordinated across all repositories, to provide a consistent versionning scheme for each major Nubis Project release.
+Major release bumps (i.e, from v0.9.2 to v1.0.0) will be coordinated across all repositories, to provide a consistent versioning scheme for each major Nubis Project release.
 
 ## Changelogs
 
@@ -62,7 +62,7 @@ The process is really simple and will look like this:
 
 ## Cadence
 
-For the time being, minor releases will not be on a schedule. They will be the responsability of the respective
+For the time being, minor releases will not be on a schedule. They will be the responsibility of the respective
 repository members, and we encourage the mentality of release often, release early.
 
 Major releases, since they require coordination between repositories, will be less frequent. However, we are not
