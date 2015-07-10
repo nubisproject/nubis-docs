@@ -158,6 +158,12 @@ Each Team also has an appointed Technical Lead that holds a tie-breaking vote on
 
 Commit access is a privilege, not a right. It's is earned by one's contributions and the quality of the work produced. It's all about the quality and health of the project, nothing less, nothing more.
 
+## Contact
+
+* IRC: ```#nubis-users``` on `irc.mozilla.org`
+* General mailing list: [Google Groups] (https://groups.google.com/forum/#!forum/nubis-users)
+* Developer mailing list: [Google Groups] (https://groups.google.com/forum/#!forum/nubis-dev)
+
 ## TODO: More concrete examples
 * Bug Fixes
 * Improvements
