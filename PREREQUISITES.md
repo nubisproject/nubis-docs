@@ -85,7 +85,9 @@ brew install jq
 #### Packer
 [Packer](https://www.packer.io/) (from Hashicorp) is the image building tool we use to build the Nubis system images.
 
-Built in Go, it's a simple .zip file to download with static binaries in it. No dependencies or installation pain. Simply follow the instruction [here](https://www.packer.io/downloads.html).
+Built in Go, it's a simple .zip file to [download](https://www.packer.io/downloads.html) with static binaries in it. No dependencies or installation pain. Simply follow the instruction [here](https://www.packer.io/docs/installation.html).
+
+NOTE: You need packer version v0.8.1 or newer.
 
 Homebrew users (requires Caskroom):
 ```bash
