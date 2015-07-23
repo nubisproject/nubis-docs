@@ -14,6 +14,8 @@ The next thing is to checkout the code and deploy the application. This is cover
 ### Play
 It is now time to play around with your new deployment. You will need to look up the DNS name of the load balancer in the [AWS web console](https://us-west-2.console.aws.amazon.com/ec2/v2/home#LoadBalancers:). Place that load balancer name in your Firefox URL bar and you should see the dpaste app.
 
-In order to ssh into your instance you will need to connect through a jumphost. These are in flux at the moment so in the mean time you will need to ping one of us in #nubis-users on irc.mozilla.org for instructions.
+In order to ssh into your instance you will need to connect through a jumphost.
+
+    $> ssh ec2-user@jumphost1.sandbox.us-west-2.nubis.allizom.org
 
 Congratulations on your first Nubis deployment. Don't forget to delete your stack once you are done playing around to avoid excess billing charges.
