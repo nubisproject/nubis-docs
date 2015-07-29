@@ -98,7 +98,7 @@ git rebase origin/master
 
 Now we are ready to create the release using a signed tag as described [above](#tags). In this case I am creating a beta release for testing in advance of the v0.9.0 release.
 ```bash
-git tag -s v0.9.0-beta -m"Tag beta release for upcoming v0.9.0 release"
+git tag -s v0.9.0-beta -m"Signed beta release for upcoming v0.9.0 release"
 ```
 
 Push the tag to your fork for testing. You should validate that the release files (.tar.gz & .zip) are working as expected and that there are no collisions or typos. You should be able to safely rename or delete tags from your fork, however once they are pushed to the origin they should no longer be deleted. You should ensure things are correct prior to continuing on to the next step. If you have any doubt, have your tags code-reviewed prior to continuing on.
@@ -122,3 +122,72 @@ git push --tags
 ```
 
 That is it. You should verify once more that the release files are correct and send updates as appropriate.
+
+## Release Order
+Due to some interdependencies between various repositories, the order in which repositories are released has become important. In general you need to release [nubis-stacks](https://github.com/Nubisproject/nubis-stacks) before you release any repositories that rely on the nested stacks.
+
+There is a bit of a chicken and egg issue when it comes to releasing [nubis-storage](https://github.com/Nubisproject/nubis-storage). This is due to the fact that nubis-storage consumes nubis-stacks (requiring a released nested stack), however the nubis-stacks *storage.template* contains hard coded ami Ids. The process for solving this is quite simple:
+
+Upload the release ready nested stack templates to the new release directory:
+```bash
+bin/upload_to_s3 --path "v0.9.0-beta" push
+```
+
+Next you need to [edit](https://github.com/Nubisproject/nubis-storage/blob/master/nubis/cloudformation/main.json#L35) and rebuild nubis-storage:
+```bash
+cd path/to/nubis-storage
+vi nubis/cloudformation/main.json
+/StacksVersion
+~ update to latest release ~
+nubis-builder build
+```
+
+Place the generated ami Ids in the [storage.template](https://github.com/Nubisproject/nubis-stacks/blob/master/storage.template#L98)
+```bash
+cd path/to/nubis-stacks
+vi storage.template
+/Mappings
+~ edit the Mappings with new ami Ids ~
+```
+
+Make your pull-request, have it code reviewed and merged:
+````bash
+git add storage.template
+git commit -m"Update storage AMI Ids for v0.9.0-beta release"
+git push
+hub pull-request -m "Update storage AMI Ids for v0.9.0-beta release"
+```
+
+Now you can cut the release of the nubis-stacks repository, making sure you are up to date first:
+```bash
+git checkout master
+git fetch origin
+git rebase origin/master
+git tag -s v0.9.0-beta -m"Signed beta release for upcoming v0.9.0 release"
+git push --tags
+```
+
+Complete the dance, making sure you push the tag to *originmaster* and fetch back the release ref. This ensures you have locally what is actually in the release.
+```bash
+git checkout originmaster
+git pull
+git push --tags
+git checkout master
+git fetch origin
+git rebase origin/master
+```
+
+Finally push the actual release of nubis-stacks to the S3 bucket overwriting your previous, temporary uploads:
+```bash
+bin/upload_to_s3 --path "v0.9.0-beta" push
+```
+
+You are now in a position to release the remaining repositories (including nubis-storage). There is generally no order to this process, however there are a few remaining points.
+
+You MUST test the (currently) three example repositories to make sure they work prior to releasing them. This is important due to the fact that we are making a guarantee that if a user chooses to use the project at a known good release, that this release will be, well, good. What this means is that you need to actually *nubis-builder build* AND *cloudformation create-stack* on all of the example repositories followed by some testing. Be sure to update their respective cloudformation templates to use the newly released nubis-stacks before you deploy them. The three repositories are:
+
+ * [nubis-skel](https://github.com/Nubisproject/nubis-skel)
+ * [nubis-dpaste](https://github.com/Nubisproject/nubis-dpaste)
+ * [nubis-mediawiki](https://github.com/Nubisproject/nubis-mediawiki)
+
+That is about all there is to it. You need to close a few issues and send an announcement to the nubis-announce list, but I am sure you remember all of that from higher up in this doc. Cheers.
