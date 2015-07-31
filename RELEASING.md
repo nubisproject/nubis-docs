@@ -142,6 +142,14 @@ vi nubis/cloudformation/main.json
 nubis-builder build
 ```
 
+Place the generated ami Ids in the nubis-storage [main.json](https://github.com/Nubisproject/nubis-storage/blob/master/nubis/cloudformation/main.json#L76)
+```bash
+cd path/to/nubis-storage
+vi nubis/cloudformation/main.json
+/Mappings
+~ edit the Mappings with new ami Ids ~
+```
+
 Place the generated ami Ids in the [storage.template](https://github.com/Nubisproject/nubis-stacks/blob/master/storage.template#L98)
 ```bash
 cd path/to/nubis-stacks
