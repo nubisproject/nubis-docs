@@ -1,26 +1,30 @@
 # Change Log
 
+## [v1.0.0](https://github.com/nubisproject/nubis-docs/tree/v1.0.0) (2015-08-31)
+
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v0.9.0...v1.0.0)
+
+**Merged pull requests:**
+
+- tyop [\#71](https://github.com/Nubisproject/nubis-docs/pull/71) ([gozer](https://github.com/gozer))
+
+- Add release order notes [\#70](https://github.com/Nubisproject/nubis-docs/pull/70) ([tinnightcap](https://github.com/tinnightcap))
+
+- add jumphost CNAME [\#67](https://github.com/Nubisproject/nubis-docs/pull/67) ([gozer](https://github.com/gozer))
+
+- Fix packer links and add version note [\#66](https://github.com/Nubisproject/nubis-docs/pull/66) ([tinnightcap](https://github.com/tinnightcap))
+
+- Added a contact section [\#65](https://github.com/Nubisproject/nubis-docs/pull/65) ([limed](https://github.com/limed))
+
 ## [v0.9.0](https://github.com/nubisproject/nubis-docs/tree/v0.9.0) (2015-07-10)
 
 **Closed issues:**
 
 - Combine all prerequisites into a single file [\#44](https://github.com/Nubisproject/nubis-docs/issues/44)
 
-- Document the new puppet:///nubis/{files,templates} magic [\#43](https://github.com/Nubisproject/nubis-docs/issues/43)
-
-- Roadmap: Determine and Document a release cadence [\#37](https://github.com/Nubisproject/nubis-docs/issues/37)
-
-- Clarify ssh key \(KeyName\) variable [\#35](https://github.com/Nubisproject/nubis-docs/issues/35)
-
-- Document region configuration setting [\#34](https://github.com/Nubisproject/nubis-docs/issues/34)
-
-- Complete the CONTRIBUTING documentation [\#33](https://github.com/Nubisproject/nubis-docs/issues/33)
-
-- Document the policies for code review [\#30](https://github.com/Nubisproject/nubis-docs/issues/30)
-
-- Document the policies for repository access [\#28](https://github.com/Nubisproject/nubis-docs/issues/28)
-
 **Merged pull requests:**
+
+- Updating changelog for v0.9.0 release [\#64](https://github.com/Nubisproject/nubis-docs/pull/64) ([tinnightcap](https://github.com/tinnightcap))
 
 - Place all prereqs in one file, closes \#44 [\#61](https://github.com/Nubisproject/nubis-docs/pull/61) ([tinnightcap](https://github.com/tinnightcap))
 
