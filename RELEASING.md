@@ -84,6 +84,7 @@ This is the only time you will need to operate on an origin branch directly. Thi
 The first thing you will need to do is set up your branches in a manner similar to the following. That is one branch, I have called master, which is tracking your fork and one branch, I have called originmaster, tracking the master branch from the nubisproject origin. You can call these whatever you like, however these instructions will assume you have named them as shown here.
 
 ```bash
+git checkout -b originmaster --track origin/master
 git branch -avv
 * master        0645ce9 [tinnightcap/master] Update changelog for v0.9.0-beta1 release
   originmaster  7a8254d [origin/master] Merge pull request #8 from tinnightcap/master
