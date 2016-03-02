@@ -1,4 +1,4 @@
-# Nubis - Contributing
+﻿# Nubis - Contributing
 
 The Nubis project is an open-source, collaborative project. And anybody is more than welcome to contribute to it.
 
@@ -9,7 +9,16 @@ Before you can contribute to the Nubis project, you'll need to make sure of a fe
 
 At this point, you should have all the tooling necessary to make changes to Nubis itself.
 
-Take the time to read the contents of https://github.com/Nubisproject/nubis-docs where you'll find tons of useful documentation explaining a lot more details about the various parts that make up the Nubis project.
+Take the time to read the contents of [nubis-docs](https://github.com/Nubisproject/nubis-docs) where you'll find tons of useful documentation explaining a lot more details about the various parts that make up the Nubis project.
+
+### Code standards
+ - AWS deployments *must* be written in [Terraform](https://www.terraform.io/)
+  - Exceptions will only be allowed for unsupported resources
+ - Small utility scripts *must* be written in [Bash](https://www.gnu.org/software/bash/).
+  - Bash code *should* be POSIX compliant
+  - Bash code *should* be run through [ShellCheck](http://www.shellcheck.net/) before submittal.
+ - Tools *must* be written in [Go](https://golang.org/).
+  - Go code *should* be run through the [go linter](https://github.com/golang/lint).
 
 ### Process
 
