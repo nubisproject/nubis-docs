@@ -1,0 +1,21 @@
+Subject: Nubis Release v1.X.X
+
+We are happy to announce the most recent release of the Nubis platform.
+
+The Nubis Platform engineering team has been hard at work and this release (TODO: Summarize the theme of the release. This should be one, simple idea.)
+
+
+Some highlights for this release include:
+ - (TODO: List the highlights)
+
+In numbers:
+ - XXX Pull Requests Merged
+ - XXX Issues Closed
+
+--
+Nubis - Release Manager
+  https://github.com/nubisproject/
+  http://nubis.mozilla.org/
+  http://nubis-docs.readthedocs.org/
+
+TODO: Attach gpg signature to message
