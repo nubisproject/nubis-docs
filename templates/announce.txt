@@ -10,7 +10,9 @@ Some highlights for this release include:
 
 In numbers:
  - XXX Pull Requests Merged
+ - XXX Issues Opened Since Last Release
  - XXX Issues Closed
+ - XXX Issues Remaining
 
 --
 Nubis - Release Manager
