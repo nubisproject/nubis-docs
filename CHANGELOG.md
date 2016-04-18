@@ -1,5 +1,21 @@
 # Change Log
 
+## [v1.1.0](https://github.com/nubisproject/nubis-docs/tree/v1.1.0) (2016-04-18)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.0.1...v1.1.0)
+
+**Closed issues:**
+
+- Tag v1.1.0 release [\#68](https://github.com/nubisproject/nubis-docs/issues/68)
+
+**Merged pull requests:**
+
+- Update announce.txt [\#86](https://github.com/nubisproject/nubis-docs/pull/86) ([RichardWeiss](https://github.com/RichardWeiss))
+-  Add Terraform vs Cloudformation section & Rename [\#85](https://github.com/nubisproject/nubis-docs/pull/85) ([tinnightcap](https://github.com/tinnightcap))
+- Add release template [\#84](https://github.com/nubisproject/nubis-docs/pull/84) ([tinnightcap](https://github.com/tinnightcap))
+- Updates for clairity [\#83](https://github.com/nubisproject/nubis-docs/pull/83) ([tinnightcap](https://github.com/tinnightcap))
+- Add versioning document [\#82](https://github.com/nubisproject/nubis-docs/pull/82) ([tinnightcap](https://github.com/tinnightcap))
+- Add coding standards [\#81](https://github.com/nubisproject/nubis-docs/pull/81) ([tinnightcap](https://github.com/tinnightcap))
+
 ## [v1.0.1](https://github.com/nubisproject/nubis-docs/tree/v1.0.1) (2015-11-20)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.0.0...v1.0.1)
 
@@ -8,9 +24,11 @@
 - Tag  release [\#77](https://github.com/nubisproject/nubis-docs/issues/77)
 - 4-apps code locations [\#74](https://github.com/nubisproject/nubis-docs/issues/74)
 - Create policy requiring peer review of code on projects hosted in Nubis [\#73](https://github.com/nubisproject/nubis-docs/issues/73)
+- Tag v1.0.1 release [\#78](https://github.com/nubisproject/nubis-docs/issues/78)
 
 **Merged pull requests:**
 
+- Update CHANGELOG for v1.0.1 release [\#79](https://github.com/nubisproject/nubis-docs/pull/79) ([tinnightcap](https://github.com/tinnightcap))
 - Added extra command on how to track orignmaster branch [\#75](https://github.com/nubisproject/nubis-docs/pull/75) ([limed](https://github.com/limed))
 
 ## [v1.0.0](https://github.com/nubisproject/nubis-docs/tree/v1.0.0) (2015-08-31)
@@ -62,9 +80,15 @@
 - Typo fix. [\#24](https://github.com/nubisproject/nubis-docs/pull/24) ([glogiotatidis](https://github.com/glogiotatidis))
 - Fix System Overview link [\#23](https://github.com/nubisproject/nubis-docs/pull/23) ([jgmize](https://github.com/jgmize))
 - Add Introduction Presentation [\#22](https://github.com/nubisproject/nubis-docs/pull/22) ([tinnightcap](https://github.com/tinnightcap))
+- fix en-dash to -- in 0601 presentation [\#21](https://github.com/nubisproject/nubis-docs/pull/21) ([floatingatoll](https://github.com/floatingatoll))
+- Adding region to jumphost url [\#20](https://github.com/nubisproject/nubis-docs/pull/20) ([tinnightcap](https://github.com/tinnightcap))
+- Edit links document for readability [\#19](https://github.com/nubisproject/nubis-docs/pull/19) ([tinnightcap](https://github.com/tinnightcap))
 - Adding IT Walk Through Presentation [\#18](https://github.com/nubisproject/nubis-docs/pull/18) ([tinnightcap](https://github.com/tinnightcap))
 - Updating walk through to use dpaste app [\#17](https://github.com/nubisproject/nubis-docs/pull/17) ([tinnightcap](https://github.com/tinnightcap))
+- Updating prereques doc to make it more helpful [\#16](https://github.com/nubisproject/nubis-docs/pull/16) ([tinnightcap](https://github.com/tinnightcap))
 - Add slide to presentation [\#15](https://github.com/nubisproject/nubis-docs/pull/15) ([tinnightcap](https://github.com/tinnightcap))
+- Update CLOUDFORMATION.md [\#14](https://github.com/nubisproject/nubis-docs/pull/14) ([davecurado](https://github.com/davecurado))
+- Update GETTING\_STARTED.md [\#13](https://github.com/nubisproject/nubis-docs/pull/13) ([davecurado](https://github.com/davecurado))
 - Adjust link for irc [\#12](https://github.com/nubisproject/nubis-docs/pull/12) ([tinnightcap](https://github.com/tinnightcap))
 - Adding walkthrough document [\#11](https://github.com/nubisproject/nubis-docs/pull/11) ([tinnightcap](https://github.com/tinnightcap))
 - Links and minor clairification [\#10](https://github.com/nubisproject/nubis-docs/pull/10) ([tinnightcap](https://github.com/tinnightcap))
