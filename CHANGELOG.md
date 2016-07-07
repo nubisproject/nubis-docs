@@ -1,14 +1,24 @@
 # Change Log
 
+## [v1.2.0](https://github.com/nubisproject/nubis-docs/tree/v1.2.0) (2016-07-07)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.1.0...v1.2.0)
+
+**Merged pull requests:**
+
+- Need index.md because of bug in rtd [\#91](https://github.com/nubisproject/nubis-docs/pull/91) ([gozer](https://github.com/gozer))
+- Add release presentation [\#89](https://github.com/nubisproject/nubis-docs/pull/89) ([tinnightcap](https://github.com/tinnightcap))
+
 ## [v1.1.0](https://github.com/nubisproject/nubis-docs/tree/v1.1.0) (2016-04-18)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.0.1...v1.1.0)
 
 **Closed issues:**
 
 - Tag v1.1.0 release [\#68](https://github.com/nubisproject/nubis-docs/issues/68)
+- Tag v1.1.0 release [\#80](https://github.com/nubisproject/nubis-docs/issues/80)
 
 **Merged pull requests:**
 
+- Update CHANGELOG for v1.1.0 release [\#88](https://github.com/nubisproject/nubis-docs/pull/88) ([tinnightcap](https://github.com/tinnightcap))
 - Update announce.txt [\#86](https://github.com/nubisproject/nubis-docs/pull/86) ([RichardWeiss](https://github.com/RichardWeiss))
 -  Add Terraform vs Cloudformation section & Rename [\#85](https://github.com/nubisproject/nubis-docs/pull/85) ([tinnightcap](https://github.com/tinnightcap))
 - Add release template [\#84](https://github.com/nubisproject/nubis-docs/pull/84) ([tinnightcap](https://github.com/tinnightcap))
