@@ -14,6 +14,16 @@ In numbers:
  - XXX Issues Closed
  - XXX Issues Remaining
 
+Attached you will find a presentation highlighting the work we
+accomplished during this release cycle.
+
+If you prefer you can also find the same presentation in our docs
+repository here:
+https://github.com/nubisproject/nubis-docs/blob/master/presentations/Nubis_Release_1.X.X.pdf
+
+Or if Google Drive is your cup of tea:
+[LINK]
+
 --
 Nubis - Release Manager
   https://github.com/nubisproject/
