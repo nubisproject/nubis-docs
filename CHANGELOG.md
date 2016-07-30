@@ -1,10 +1,23 @@
 # Change Log
 
-## [v1.2.0](https://github.com/nubisproject/nubis-docs/tree/v1.2.0) (2016-07-07)
-[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.1.0...v1.2.0)
+## [v1.2.1](https://github.com/nubisproject/nubis-docs/tree/v1.2.1) (2016-07-30)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.2.0...v1.2.1)
 
 **Merged pull requests:**
 
+- Add presentation for v1.2.0 release [\#95](https://github.com/nubisproject/nubis-docs/pull/95) ([tinnightcap](https://github.com/tinnightcap))
+- Adding presentation for v1.2.0 release [\#94](https://github.com/nubisproject/nubis-docs/pull/94) ([tinnightcap](https://github.com/tinnightcap))
+
+## [v1.2.0](https://github.com/nubisproject/nubis-docs/tree/v1.2.0) (2016-07-07)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.1.0...v1.2.0)
+
+**Closed issues:**
+
+- Tag v1.2.0 release [\#92](https://github.com/nubisproject/nubis-docs/issues/92)
+
+**Merged pull requests:**
+
+- Update CHANGELOG for v1.2.0 release [\#93](https://github.com/nubisproject/nubis-docs/pull/93) ([tinnightcap](https://github.com/tinnightcap))
 - Need index.md because of bug in rtd [\#91](https://github.com/nubisproject/nubis-docs/pull/91) ([gozer](https://github.com/gozer))
 - Add release presentation [\#89](https://github.com/nubisproject/nubis-docs/pull/89) ([tinnightcap](https://github.com/tinnightcap))
 
