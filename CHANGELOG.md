@@ -3,8 +3,13 @@
 ## [v1.2.1](https://github.com/nubisproject/nubis-docs/tree/v1.2.1) (2016-07-30)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.2.0...v1.2.1)
 
+**Closed issues:**
+
+- Tag v1.2.1 release [\#96](https://github.com/nubisproject/nubis-docs/issues/96)
+
 **Merged pull requests:**
 
+- Update CHANGELOG for v1.2.1 release [\#97](https://github.com/nubisproject/nubis-docs/pull/97) ([tinnightcap](https://github.com/tinnightcap))
 - Add presentation for v1.2.0 release [\#95](https://github.com/nubisproject/nubis-docs/pull/95) ([tinnightcap](https://github.com/tinnightcap))
 - Adding presentation for v1.2.0 release [\#94](https://github.com/nubisproject/nubis-docs/pull/94) ([tinnightcap](https://github.com/tinnightcap))
 
