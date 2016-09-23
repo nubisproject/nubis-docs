@@ -135,10 +135,10 @@ Load the ```address``` from the ```Outputs:``` you got during the ```terraform a
 <kbd>![nginx_update](../media/labs/nubis-skel-lab/nginx_update.png "nginx_update")</kbd>
 
 ### Logging on to your instance
-The web server that we deployed is runnign in a private subnet. In order to ssh to the web server we will need to go through a jumphost.
+The web server that we deployed is runnign in a private subnet. In order to ssh to the web server we will need to go through a jumphost.  Replace "myapp" in this command with your app name.
 
 ```bash
-ssh -A -t ec2-user@jumphost.stage.us-west-2.${ACCOUNT_NAME}.nubis.allizom.org "ssh -A -t ubuntu@${USER_LOGIN}-myapp.nubis-myapp.service.consul"
+ssh -A -t ec2-user@jumphost.stage.us-west-2.${ACCOUNT_NAME}.nubis.allizom.org "ssh -A -t ubuntu@${USER_LOGIN}.nubis-myapp.service.consul"
 ```
 
 ### Loggin into the AWS web console.
