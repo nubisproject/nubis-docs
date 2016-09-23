@@ -10,7 +10,12 @@ tar -xvf v1.2.2-training.tar.gz
 cd nubis-skel-1.2.2-training/
 ```
 ## Change the name of the application
-Here we will change the name of the application to ```myapp```. When you are deploying your own application you should change this to what makes sense. For the sake of this lab, you should use the name ```myapp``` as you see it in the command below.
+Here we will change the name of the application. When you are deploying your own application you should change this to what makes sense. For the sake of this lab, you should use some form of your user name.
+
+**NOTE** Do not use ```myapp``` here, it will cause a build error
+
+**NOTE2** Do not exceed 12 characters for the app name (ask me why if you are interested)
+
 ```bash
 grep skel * -rl | xargs perl -pi -e's/skel/myapp/g'
 ```
@@ -38,7 +43,7 @@ Now that we have built the AMI we can use it to deploy into AWS using Terraform.
 
 All of the terraform commands should be run from the ```nubis/terraform``` directory. We will also set some variables for convenience.
 
-**NOTE:** If your LDAP login is different from your local user name you may need to replace the ```$USER``` variables below with your LDAP user name.
+**NOTE:** If your POSIX login is different from your local user name you may need to replace the ```$USER``` variables below with your POSIX user name. Do not use your entire LDAP login here. Say your LDAP is ```me@mozilla.com```, you would use ```me```.
 
 **NOTE-2:** You need to use the AMI ID from the ```nubis-builder``` outputs to include it in the ```AMI_ID``` variable here.
 
@@ -52,13 +57,14 @@ export ACCOUNT_NAME="nubis-training-2016" USER_LOGIN="$USER" SSH_KEY_NAME="$USER
 ## Configure The Deployment
 In this step we will create our ```terraform.tfvars``` file. There is an example ```terraform.tfvars-dist``` file that you can copy and edit or you can run the following commands.
 
+**NOTE:** For all of the copy-paste examples, some users have reported having to remove the curly brackets ```{ }```.
 
 ```bash
 cat <<EOF > terraform.tfvars
 account = "${ACCOUNT_NAME}"
 region  = "us-west-2"
 environment = "stage"
-service_name = "${USER_LOGIN}-myapp"
+service_name = "${USER_LOGIN}"
 ssh_key_name = "${SSH_KEY_NAME}"
 ssh_key_file = "${SSH_KEY_FILE}"
 EOF
@@ -107,7 +113,7 @@ If you get an error similar to this one you will need to edit yout ```terraform.
 ### Verify it worked
 Load the ```address``` from the ```Outputs:``` you got during the ```terraform apply``` above and you should see the nginx default ```index.html``` page.
 
-![nginx_default](../media/labs/nubis-skel-lab/nginx_default.png "nginx_default")
+<kbd>![nginx_default](../media/labs/nubis-skel-lab/nginx_default.png "nginx_default")</kbd>
 
 ## Update The Application
 Now we are going to make a change to the application. You can customize the application to your liking. The commands here will have you simply edit the ```index.html``` file and add some custom text. Then you will rebuild the AMI by running ```nubis-builder build```, thereafter a ```terraform plan``` followed by a ```terraform apply```.
@@ -126,7 +132,7 @@ export AMI_ID="ami-XXX"
 ### Verify your changes
 Load the ```address``` from the ```Outputs:``` you got during the ```terraform apply``` above and you should see your updates to the ```index.html``` page.
 
-![nginx_update](../media/labs/nubis-skel-lab/nginx_update.png "nginx_update")
+<kbd>![nginx_update](../media/labs/nubis-skel-lab/nginx_update.png "nginx_update")</kbd>
 
 ### Logging on to your instance
 The web server that we deployed is runnign in a private subnet. In order to ssh to the web server we will need to go through a jumphost.
@@ -177,7 +183,7 @@ Next create a new repository [here](https://github.com/new)
 
 You will need to name your new repository and add a description. You do not need to add a README or a LICENSE as they are already included with the nubis-skel project. then click the ```“Create repository”``` button.
 
-![github_new_repository](../media/labs/nubis-skel-lab/github_new_repository.png "github_new_repository")
+<kbd>![github_new_repository](../media/labs/nubis-skel-lab/github_new_repository.png "github_new_repository")</kbd>
 
 Now you will need follow the second set of instructions under ```“Push an existing repository…”```.
 
