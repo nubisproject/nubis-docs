@@ -56,9 +56,9 @@ The next thing I like to do is set up some local shell variables to make the fol
 ACCOUNT_NAME='nubis-training-2016'; ACCOUNT_NUMBER='517826968395'; LOGIN='jcrowe'
 ```
 
-Now you can run the aws-vault command to set up the account. This will ask you for the 'Access Key ID' and the 'Secret Access Key'. You will need to get those from the user credentials email as well:
+Now you can run the aws-vault command to set up the account. This will ask you for the 'Access Key ID' and the 'Secret Access Key'. Note that if you are using linux you will need to add `--backend=kwallet`. You will need to get those from the user credentials email as well:
 ```bash
-aws-vault --backend=kwallet add ${ACCOUNT_NAME}
+aws-vault add ${ACCOUNT_NAME}
 ```
 
 It should look something like this (keys redacted):
@@ -70,7 +70,7 @@ Added credentials to profile "nubis-training-2016" in vault
 
 Now it is time to create your virtual MFA device:
 ```bash
-aws-vault --backend=kwallet exec -n ${ACCOUNT_NAME} -- aws iam create-virtual-mfa-device --virtual-mfa-device-name ${LOGIN} --outfile ${LOGIN}.png --bootstrap-method QRCodePNG
+aws-vault exec -n ${ACCOUNT_NAME} -- aws iam create-virtual-mfa-device --virtual-mfa-device-name ${LOGIN} --outfile ${LOGIN}.png --bootstrap-method QRCodePNG
 ```
 
 You should see output similar to the following. The number here should correspond to the account number and the 'jcrowe' part should be your user-name (not mine ;-D):
@@ -88,7 +88,7 @@ To finish up, you need to enable the mfa device. This step is basically proving 
 
 NOTE: The codes must be sequential and entered in the correct order in the following command. (Replace ```123456``` and ```654321``` with codes from your app):
 ```bash
-aws-vault --backend=kwallet exec -n ${ACCOUNT_NAME} -- aws iam enable-mfa-device --user-name ${LOGIN} --serial-number arn:aws:iam::${ACCOUNT_NUMBER}:mfa/${LOGIN} --authentication-code-1 123456 --authentication-code-2 654321
+aws-vault exec -n ${ACCOUNT_NAME} -- aws iam enable-mfa-device --user-name ${LOGIN} --serial-number arn:aws:iam::${ACCOUNT_NUMBER}:mfa/${LOGIN} --authentication-code-1 123456 --authentication-code-2 654321
 ```
 
 You need to configure your AWS CLI tools to make use of the virtual MFA device. You can either add this to your ```~/.aws/config``` file manually or run the following bash snippet:
@@ -115,7 +115,7 @@ EOH
 
 To test that everything has been set up correctly, run the following command:
 ```bash
-aws-vault exec ${ACCOUNT}-ro -- aws ec2 describe-regions
+aws-vault exec ${ACCOUNT_NAME}-ro -- aws ec2 describe-regions
 ```
 
 If everything works correctly, you will be prompted for an MFA token. After entering it you should see some output similar to this:
@@ -139,7 +139,7 @@ Enter token for arn:aws:iam::517826968395:mfa/jcrowe: 123456
 
 Finally you should attempt to login to the web console for the account by running this command. It should open a new tab in your browser:
 ```bash
-aws-vault --debug login ${ACCOUNT}-ro
+aws-vault --debug login ${ACCOUNT_NAME}-ro
 ```
 
 ### nubis-builder
