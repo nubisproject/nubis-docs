@@ -56,7 +56,7 @@ The next thing I like to do is set up some local shell variables to make the fol
 ACCOUNT_NAME='nubis-training-2016'; ACCOUNT_NUMBER='517826968395'; LOGIN='jcrowe'
 ```
 
-Now you can run the aws-vault command to set up the account. This will ask you for the 'Access Key ID' and the 'Secret Access Key'. Note that if you are using linux you will need to add `--backend=kwallet`. You will need to get those from the user credentials email as well:
+Now you can run the aws-vault command to set up the account. This will ask you for the 'Access Key ID' and the 'Secret Access Key'. You will need to get those from the user credentials email as well:
 ```bash
 aws-vault add ${ACCOUNT_NAME}
 ```
