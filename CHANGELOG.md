@@ -1,5 +1,34 @@
 # Change Log
 
+## [v1.3.0](https://github.com/nubisproject/nubis-docs/tree/v1.3.0) (2016-12-20)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.2.2...v1.3.0)
+
+**Closed issues:**
+
+- Tag v1.2.3 release [\#100](https://github.com/nubisproject/nubis-docs/issues/100)
+- Fix readthedocs index [\#90](https://github.com/nubisproject/nubis-docs/issues/90)
+
+**Merged pull requests:**
+
+- Update to working state [\#107](https://github.com/nubisproject/nubis-docs/pull/107) ([tinnightcap](https://github.com/tinnightcap))
+- Add first draft Deployment Overview and related media [\#106](https://github.com/nubisproject/nubis-docs/pull/106) ([tinnightcap](https://github.com/tinnightcap))
+- Rename images to media to match standard [\#105](https://github.com/nubisproject/nubis-docs/pull/105) ([tinnightcap](https://github.com/tinnightcap))
+- Doc update [\#104](https://github.com/nubisproject/nubis-docs/pull/104) ([limed](https://github.com/limed))
+- Fix Consul SSH target name [\#103](https://github.com/nubisproject/nubis-docs/pull/103) ([ziegeer](https://github.com/ziegeer))
+- Edits to aviod build errors [\#102](https://github.com/nubisproject/nubis-docs/pull/102) ([tinnightcap](https://github.com/tinnightcap))
+- Squashed commit of the following: [\#101](https://github.com/nubisproject/nubis-docs/pull/101) ([tinnightcap](https://github.com/tinnightcap))
+
+## [v1.2.2](https://github.com/nubisproject/nubis-docs/tree/v1.2.2) (2016-08-02)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.2.1...v1.2.2)
+
+**Closed issues:**
+
+- Tag v1.2.2 release [\#98](https://github.com/nubisproject/nubis-docs/issues/98)
+
+**Merged pull requests:**
+
+- Update CHANGELOG for v1.2.2 release [\#99](https://github.com/nubisproject/nubis-docs/pull/99) ([tinnightcap](https://github.com/tinnightcap))
+
 ## [v1.2.1](https://github.com/nubisproject/nubis-docs/tree/v1.2.1) (2016-07-30)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.2.0...v1.2.1)
 
