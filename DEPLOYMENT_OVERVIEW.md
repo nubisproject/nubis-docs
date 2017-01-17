@@ -11,18 +11,17 @@ This is a list of all of the services available in a Nubis Account.
 
 **TODO**: Add missing documentation links
 
- - VPC
+ - [VPC](https://github.com/nubisproject/nubis-deploy/blob/master/README.md#vpc-deployment)
  - [Consul](https://github.com/nubisproject/nubis-consul/blob/master/README.md#consul-deployment)
  - [Jumphost](https://github.com/nubisproject/nubis-jumphost/blob/master/README.md#jumphost-deployment)
- - Fluent
- - Opsec
- - CI
- - VPN
+ - [Fluent](https://github.com/nubisproject/nubis-fluent-collector/blob/master/README.md#fluent-deployment)
+ - [Opsec / CloudTrail](https://github.com/nubisproject/nubis-deploy/blob/master/README.md#opsec-deployment)
+ - [CI](https://github.com/nubisproject/nubis-ci/blob/master/README.md#ci-deployment)
+ - [VPN](https://github.com/nubisproject/nubis-deploy/blob/master/README.md#vpc-deployment)
  - User Management
- - CloudTrail
- - NAT / Proxy
- - Prometheus
- - ELK
+ - [NAT / Proxy](https://github.com/nubisproject/nubis-nat/blob/master/README.md#nat-deployment)
+ - [Prometheus](https://github.com/nubisproject/nubis-prometheus/blob/master/README.md#prometheus-deployment)
+ - [ELK](https://github.com/nubisproject/nubis-fluent-collector/blob/master/README.md#deployment-notes)
 
 It is important to note that not all services are deployed in every account. To determine which services are deployed in a specific account you will need to consult the deployment configuration file for that account. For example, you can find the configuration files for the Nubis' Teams accounts in the [nubis-accounts-nubis](https://github.com/nubisproject/nubis-accounts-nubis) repository.
 
