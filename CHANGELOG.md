@@ -1,12 +1,21 @@
 # Change Log
 
-## [v1.3.0](https://github.com/nubisproject/nubis-docs/tree/v1.3.0) (2016-12-20)
+## [v1.4.0](https://github.com/nubisproject/nubis-docs/tree/v1.4.0) (2017-03-22)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.3.0...v1.4.0)
+
+**Merged pull requests:**
+
+- Some changes that I apparently forgot about [\#111](https://github.com/nubisproject/nubis-docs/pull/111) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.3.0 release [\#109](https://github.com/nubisproject/nubis-docs/pull/109) ([tinnightcap](https://github.com/tinnightcap))
+
+## [v1.3.0](https://github.com/nubisproject/nubis-docs/tree/v1.3.0) (2016-12-13)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.2.2...v1.3.0)
 
 **Closed issues:**
 
 - Tag v1.2.3 release [\#100](https://github.com/nubisproject/nubis-docs/issues/100)
 - Fix readthedocs index [\#90](https://github.com/nubisproject/nubis-docs/issues/90)
+- Tag v1.3.0 release [\#108](https://github.com/nubisproject/nubis-docs/issues/108)
 
 **Merged pull requests:**
 
