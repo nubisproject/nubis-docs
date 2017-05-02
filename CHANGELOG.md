@@ -1,10 +1,24 @@
 # Change Log
 
+## [v1.4.2](https://github.com/nubisproject/nubis-docs/tree/v1.4.2) (2017-05-02)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.4.1...v1.4.2)
+
+**Closed issues:**
+
+- Tag v1.3.1 release [\#112](https://github.com/nubisproject/nubis-docs/issues/112)
+- Add a roadmap [\#63](https://github.com/nubisproject/nubis-docs/issues/63)
+
 ## [v1.4.1](https://github.com/nubisproject/nubis-docs/tree/v1.4.1) (2017-04-11)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.4.0...v1.4.1)
 
+**Closed issues:**
+
+- Tag v1.4.1 release [\#116](https://github.com/nubisproject/nubis-docs/issues/116)
+
 **Merged pull requests:**
 
+- Merge v1.4.1 release into develop. \[skip ci\] [\#118](https://github.com/nubisproject/nubis-docs/pull/118) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.4.1 release \[skip ci\] [\#117](https://github.com/nubisproject/nubis-docs/pull/117) ([tinnightcap](https://github.com/tinnightcap))
 - Add release presentation for v1.4.0 release [\#115](https://github.com/nubisproject/nubis-docs/pull/115) ([tinnightcap](https://github.com/tinnightcap))
 
 ## [v1.4.0](https://github.com/nubisproject/nubis-docs/tree/v1.4.0) (2017-03-22)
