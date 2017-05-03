@@ -7,6 +7,12 @@
 
 - Tag v1.3.1 release [\#112](https://github.com/nubisproject/nubis-docs/issues/112)
 - Add a roadmap [\#63](https://github.com/nubisproject/nubis-docs/issues/63)
+- Tag v1.4.2 release [\#128](https://github.com/nubisproject/nubis-docs/issues/128)
+
+**Merged pull requests:**
+
+- Merge v1.4.2 release into develop. \[skip ci\] [\#130](https://github.com/nubisproject/nubis-docs/pull/130) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.4.2 release \[skip ci\] [\#129](https://github.com/nubisproject/nubis-docs/pull/129) ([tinnightcap](https://github.com/tinnightcap))
 
 ## [v1.4.1](https://github.com/nubisproject/nubis-docs/tree/v1.4.1) (2017-04-11)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.4.0...v1.4.1)
