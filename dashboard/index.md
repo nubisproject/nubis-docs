@@ -1,54 +1,80 @@
-﻿# Exercise One
-For this exercise the participants will break up into small groups. Then they will chose a topic and discuss how they can improve by using the principles discussed in the previous two modules.
+﻿
 
- - [Setup](#setup)
- - [Organize into groups](#organize-into-groups)
- - [Chose a Topic](#chose-a-topic)
- - [Discuss Improvements](#discuss-improvements)
- - [Presentations and Discussions](#presentations-and-discussions)
+# Nubis Dashboard
 
-## Setup
-You will need to have large sticky pads or small white-boards for each team. These should be placed around the room so that each team can gather around without interfering with the other teams.
+Welcome to the Nubis Dashboard. Here you will find links to all of the tools
+available in this account.
 
-## Organize into groups
-Have the people count off by an appropriate number to create groups of four to five members. For example, if there are twenty people in the class have them count off to four. There will be four groups of five people each.
+We have also included some sample, cheet sheet style help for you along with
+links to documentation about each tool.
 
-The intention is to create a number of groups for the exercise that are small enough that everyone can have a voice and participate. If the groups are to large it is difficult for everyone to participate. If the groups are to small it may be difficult for them to come up with a topic.
+If you have any questions, please reach out to the Nubis team on slack or irc
+in #nubis-users.
 
-Generally counting off while going around the room creates diversity amongst the teams. This way teams should be made up of a cross section of the people attending the training. Any method to create the groups can be used, the thing to avoid is entire groups of people who may not be involved closely enough with the technology to come up with a topic.
+* [Key-Value](#key-value)
+* [Monitoring](#monitoring)
+* [Alerting](#alerting)
+* [Graphs](#graphs)
+* [Logs](#logs)
+* [Pipeline](#pipeline)
 
-Once everyone has counted off, have the teams gather around their paper or white-board.
+## Key-Value
 
-## Chose a Topic
-Instruct the teams to each chose a topic. This should be a real topic and not a hypothetical. The topic should be a problem they have today. It will likely be around some technology or process they currently use in the datacenter that could use improvement.
+The key-value store is where run-time configuration is stored. We are using
+[Consul](https://www.consul.io/) as both the key-value store as well as for
+service discovery.
 
-Have the team write the topic on the top of their paper.
+**TODO:** Add me some helpfull cheet-sheet commands.
 
-The topics can be anything, however it needs to be something that can be solved by applying some of the operating principles previously discussed. It is best if each team has a unique topic. This enables a broader opportunity for collaborative discussion later on.
+You can find the official documentation [here](https://www.consul.io/docs/index.html).
 
-If teams are having difficulty coming up with a topic suggestions can be made from the following list. It is important for teams to try and come up with their own topic so that it is relevant and meaningful to them.
+## Monitoring
 
-Topic Ideas:
- - Application deployment process
- - Team collaboration
- - System upgrading and patching
- - Dependencies between applications
- - Developer access
- - Monitoring insights
- - Rolling back
- - Dependency management for applications
- - Configuration management
- - Configuration validation and testing
- - Testing in general
+We are using [Prometheus](https://prometheus.io/) as the monitoring service in
+this account.
 
-## Discuss Improvements
-Once each team has chosen a topic, instruct them to discuss how they could improve on the topic by applying some of the new operating principles. They do not need to document in great detail, a word or two so they remember what they discussed is fine.
+**TODO:** Add me some helpfull cheet-sheet commands.
 
-This section is intended to take some time. Allow enough time for the teams to explore a number of possibilities. Do not rush this process. You should move around the room and make suggestions to help the teams along the correct path. Get a sense of the room and when the conversations begin to move off-topic that is a sign that it is time to move on.
+You can find the official documentation [here](https://prometheus.io/docs/introduction/overview/).
 
-## Presentations and Discussions
-Have each team briefly introduce their topic and explain what they have discussed for improving the situation. Brief discussion is encouraged in order to further explore the operating principles. This is intended primarily to ensure that folks are gaining an understanding of the material and how they can apply it.
+## Alerting
 
-The pace of this should be based on the students understanding. If they are getting it right off this portion can be shortened. If many of the students are struggling with the concepts, this is the place to explore that and foster discussions that lead to understanding.
+The alert manager we are using is the native [Prometheus Alert Manager](https://prometheus.io/docs/alerting/alertmanager/).
 
-A break should immediately follow this discussion. This gives you the opportunity to work  with individuals who may benefit from additional guidance. This will also encourage the discussions to carry over to the break.
+**TODO:** Add me some helpful cheat-sheet commands.
+
+You can find the official documentation [here](https://prometheus.io/docs/alerting/alertmanager/).
+
+## Graphs
+
+[Grafana](https://prometheus.io/docs/visualization/grafana/) is the really nice
+tool that is available to you to make sense of all of your log and monitoring
+data.
+
+**TODO:** Add me some helpful cheat-sheet commands.
+
+You can find the official documentation [here](https://prometheus.io/docs/visualization/grafana/).
+
+## Logs
+
+We use [Fluentd](http://www.fluentd.org/) to aggregate logs from all nodes and
+services. These logs are then inserted into an [Elasticsearch](https://www.elastic.co/)
+cluster. These are presented through a Kibana interface.
+
+**TODO:** Add me some helpful cheat-sheet commands.
+
+You can find the official Kibana documentation [here](https://www.elastic.co/guide/en/kibana/current/index.html).
+
+You can find the official Elasticsearch documentation [here](https://www.elastic.co/guide/index.html).
+
+You can find the official Fluentd documentation [here](http://docs.fluentd.org/v0.12/articles/quickstart).
+
+## Pipeline
+
+[Jenkins](https://jenkins.io/) is the Continuous Integration (CI) system
+deployed in this account. This is where you go to promote your staging builds
+into production.
+
+**TODO:** Add me some helpful cheat-sheet commands.
+
+You can find the official documentation [here](https://jenkins.io/doc/).
