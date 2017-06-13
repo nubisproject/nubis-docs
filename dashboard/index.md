@@ -37,8 +37,6 @@ this account.
 
 You can find the official documentation [here](https://prometheus.io/docs/introduction/overview/).
 
-You can find your running instance [here](/prometheus/)
-
 ## Alerting
 
 The alert manager we are using is the native [Prometheus Alert Manager](https://prometheus.io/docs/alerting/alertmanager/).
@@ -46,8 +44,6 @@ The alert manager we are using is the native [Prometheus Alert Manager](https://
 **TODO:** Add me some helpful cheat-sheet commands.
 
 You can find the official documentation [here](https://prometheus.io/docs/alerting/alertmanager/).
-
-You can find your running instance [here](/alertmanager/)
 
 ## Graphs
 
@@ -58,8 +54,6 @@ data.
 **TODO:** Add me some helpful cheat-sheet commands.
 
 You can find the official documentation [here](https://prometheus.io/docs/visualization/grafana/).
-
-You can find your running instance [here](/grafana/)
 
 ## Logs
 
@@ -75,8 +69,6 @@ You can find the official Elasticsearch documentation [here](https://www.elastic
 
 You can find the official Fluentd documentation [here](http://docs.fluentd.org/v0.12/articles/quickstart).
 
-You can find your running instance [here](/kibana/app/kibana)
-
 ## Pipeline
 
 [Jenkins](https://jenkins.io/) is the Continuous Integration (CI) system
@@ -86,5 +78,3 @@ into production.
 **TODO:** Add me some helpful cheat-sheet commands.
 
 You can find the official documentation [here](https://jenkins.io/doc/).
-
-You can find your running instance [here](/jenkins/)
