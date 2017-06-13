@@ -5,6 +5,7 @@
 
 **Closed issues:**
 
+- Tag v1.4.2-docs1 release [\#145](https://github.com/nubisproject/nubis-docs/issues/145)
 - Tag v1.4.2-docs1 release [\#142](https://github.com/nubisproject/nubis-docs/issues/142)
 
 **Merged pull requests:**
