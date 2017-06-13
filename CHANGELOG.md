@@ -1,16 +1,30 @@
 # Change Log
 
-## [v1.4.2](https://github.com/nubisproject/nubis-docs/tree/v1.4.2) (2017-05-02)
+## [v1.4.2-docs1](https://github.com/nubisproject/nubis-docs/tree/v1.4.2-docs1) (2017-06-13)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.4.2...v1.4.2-docs1)
+
+**Merged pull requests:**
+
+- Add helpful link [\#141](https://github.com/nubisproject/nubis-docs/pull/141) ([gozer](https://github.com/gozer))
+- Add travis submodule and update dashboard doc [\#139](https://github.com/nubisproject/nubis-docs/pull/139) ([tinnightcap](https://github.com/tinnightcap))
+- samlple landing page for dashboard \(\#136\) [\#138](https://github.com/nubisproject/nubis-docs/pull/138) ([tinnightcap](https://github.com/tinnightcap))
+- Updates for lint checks [\#137](https://github.com/nubisproject/nubis-docs/pull/137) ([tinnightcap](https://github.com/tinnightcap))
+- samlple landing page for dashboard [\#136](https://github.com/nubisproject/nubis-docs/pull/136) ([gozer](https://github.com/gozer))
+
+## [v1.4.2](https://github.com/nubisproject/nubis-docs/tree/v1.4.2) (2017-05-03)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.4.1...v1.4.2)
 
 **Closed issues:**
 
 - Tag v1.3.1 release [\#112](https://github.com/nubisproject/nubis-docs/issues/112)
 - Add a roadmap [\#63](https://github.com/nubisproject/nubis-docs/issues/63)
+- Tag v1.4.2 release [\#131](https://github.com/nubisproject/nubis-docs/issues/131)
 - Tag v1.4.2 release [\#128](https://github.com/nubisproject/nubis-docs/issues/128)
 
 **Merged pull requests:**
 
+- Merge v1.4.2 release into develop. \[skip ci\] [\#135](https://github.com/nubisproject/nubis-docs/pull/135) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.4.2 release \[skip ci\] [\#134](https://github.com/nubisproject/nubis-docs/pull/134) ([tinnightcap](https://github.com/tinnightcap))
 - Merge v1.4.2 release into develop. \[skip ci\] [\#130](https://github.com/nubisproject/nubis-docs/pull/130) ([tinnightcap](https://github.com/tinnightcap))
 - Update CHANGELOG for v1.4.2 release \[skip ci\] [\#129](https://github.com/nubisproject/nubis-docs/pull/129) ([tinnightcap](https://github.com/tinnightcap))
 
