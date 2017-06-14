@@ -1,14 +1,24 @@
 # Change Log
 
 ## [v1.4.2-docs1](https://github.com/nubisproject/nubis-docs/tree/v1.4.2-docs1) (2017-06-13)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.4.2-docs1...v1.4.2-docs1)
+
+**Merged pull requests:**
+
+- remove borked links [\#152](https://github.com/nubisproject/nubis-docs/pull/152) ([gozer](https://github.com/gozer))
+
+## [v1.4.2-docs1](https://github.com/nubisproject/nubis-docs/tree/v1.4.2-docs1) (2017-06-13)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.4.2...v1.4.2-docs1)
 
 **Closed issues:**
 
+- Tag v1.4.2-docs1 release [\#145](https://github.com/nubisproject/nubis-docs/issues/145)
 - Tag v1.4.2-docs1 release [\#142](https://github.com/nubisproject/nubis-docs/issues/142)
 
 **Merged pull requests:**
 
+- Merge v1.4.2-docs1 release into develop. \[skip ci\] [\#149](https://github.com/nubisproject/nubis-docs/pull/149) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.4.2-docs1 release \[skip ci\] [\#148](https://github.com/nubisproject/nubis-docs/pull/148) ([tinnightcap](https://github.com/tinnightcap))
 - Merge v1.4.2-docs1 release into develop. \[skip ci\] [\#144](https://github.com/nubisproject/nubis-docs/pull/144) ([tinnightcap](https://github.com/tinnightcap))
 - Update CHANGELOG for v1.4.2-docs1 release \[skip ci\] [\#143](https://github.com/nubisproject/nubis-docs/pull/143) ([tinnightcap](https://github.com/tinnightcap))
 - Add helpful link [\#141](https://github.com/nubisproject/nubis-docs/pull/141) ([gozer](https://github.com/gozer))
