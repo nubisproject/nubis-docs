@@ -2,6 +2,10 @@
 
 # Nubis Dashboard
 
+[![Version](https://img.shields.io/github/release/nubisproject/nubis-base.svg?maxAge=2592000)](https://github.com/nubisproject/nubis-base/releases)
+[![Build Status](https://img.shields.io/travis/nubisproject/nubis-base/master.svg?maxAge=2592000)](https://travis-ci.org/nubisproject/nubis-base)
+[![Issues](https://img.shields.io/github/issues/nubisproject/nubis-base.svg?maxAge=2592000)](https://github.com/nubisproject/nubis-base/issues)
+
 Welcome to the Nubis Dashboard. Here you will find links to all of the tools
 available in this account.
 
