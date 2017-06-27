@@ -347,6 +347,25 @@ aws-vault exec ${ACCOUNT_NAME}-admin -- \
 
 ```
 
+Create terraform.tfvars from terraform.tfvars-dist and change values to these settings:
+ - account = "nubis-training"
+ - region = "us-west-2"
+ - environment = "stage"
+ - service_name = "<username>-skel"
+ - ssh_key_name = "<username>-key"
+ - ssh_key_file = "/<path to your ssh key>/.ssh/id_rsa.pub"
+ - nubis_sudo_groups = "<value provided by Nubis team>"
+ - nubis_user_groups = "<value provided by Nubis team>"
+ 
+ The service_name and ssh_key_name must be unique in the Nubis account but otherwise do not matter.
+ 
+```bash
+
+cp nubis/terraform/terraform.tfvars-dist nubis/terraform/terraform.tfvars
+vim nubis/terraform/terraform.tfvars
+
+```
+
 Deploy nubis-skel to the training account
 
 ```bash
