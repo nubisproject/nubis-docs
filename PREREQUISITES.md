@@ -328,7 +328,6 @@ Fire off the nubis-builder docker image
 
 ```bash
 
-cd nubis-skel
 docker run -v $PWD:/nubis/data nubisproject/nubis-builder:v0.1.0
 
 ```
