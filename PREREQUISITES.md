@@ -54,6 +54,19 @@ brew install awscli
 
 ```
 
+## Terraform (0.6.16+)
+
+Get it from [Terraform.io](https://www.terraform.io/downloads.html). We use
+Terraform for deploying everything from the account to the application. If you
+are interested in the decision to use Terraform over Cloudformation you can read
+about it [here](./TEMPLATING.MD).
+
+It's a simple Go binary bundle, just unzip and drop in your $PATH
+
+Make sure you obtain version 0.8.8.
+
+Try [this path](https://releases.hashicorp.com/terraform/0.8.8/).
+
 ## AWS Credentials
 
 In order to work with AWS you will need to set up some credentials. This is a
@@ -70,14 +83,6 @@ etcetera.
 [aws-vault](https://github.com/99designs/aws-vault) is a tool to securely manage
 AWS API credentials. You will need to download this tool and place it on your
 path.
-
-As the current release does not work in server mode, you will need to download
-the tool from my repositry [here](https://github.com/tinnightcap/aws-vault/releases/tag/v3.7.1-jd)
-
-If you have aws-vault installed already, you should remove it first.
-
-You need to drop this binary in the root user path as it needs to be run with
- root privileges.
 
 Once installed you will use the aws-vault tool to authenticate for all access
 and actions within AWS. Fist you will need to set up your MFA device.
@@ -259,7 +264,7 @@ of the required dependencies.
 
 ### Install docker and required libraries
 
-#### Linux:
+#### Linux
 
 NOTE: These packages are not required, but Docker will have reduced performance
 if they are not installed.
@@ -292,7 +297,7 @@ sudo usermod -aG docker $USER
 
 Log out & back in to pick up new group membership
 
-#### Mac:
+#### Mac
 
 [Get it here](https://store.docker.com/editions/community/docker-ce-desktop-mac)
 
@@ -315,12 +320,17 @@ cd nubis-skel
 
 ```
 
-Fire off aws-vault in server mode
+Set up docker variables file
 
 ```bash
 
-aws-vault exec ${ACCOUNT_NAME} --server --debug
-aws configure list
+DOCKER_CONFIG_FILE=~/.docker_env
+cat >>${DOCKER_CONFIG_FILE} <<EOH
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+AWS_SESSION_TOKEN
+AWS_SECURITY_TOKEN
+EOH
 
 ```
 
@@ -328,7 +338,26 @@ Fire off the nubis-builder docker image
 
 ```bash
 
-docker run -v $PWD:/nubis/data nubisproject/nubis-builder:v0.1.0
+aws-vault exec ${ACCOUNT_NAME}-admin -- \
+    docker run \
+    --env-file ~/.docker_env \
+    -e GIT_COMMIT_SHA=$(git rev-parse HEAD) \
+    -v $PWD:/nubis/data nubisproject/nubis-builder:v0.1.0
+
+```
+
+Deploy nubis-skel to the training account
+
+```bash
+
+exec ${ACCOUNT_NAME}-admin -- terraform get -update=true nubis/terraform
+aws-vault exec ${ACCOUNT_NAME}-admin -- \
+    terraform plan \
+    --var-file=nubis/terraform/terraform.tfvars nubis/terraform
+
+aws-vault exec ${ACCOUNT_NAME}-admin \
+    -- terraform apply \
+    --var-file=nubis/terraform/terraform.tfvars nubis/terraform
 
 ```
 
