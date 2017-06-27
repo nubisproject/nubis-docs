@@ -121,7 +121,7 @@ received in the user credentials email.
 
 ```bash
 
-ACCOUNT_NAME='nubis-training-2016'; ACCOUNT_NUMBER='517826968395'; LOGIN='jcrowe'
+ACCOUNT_NAME='nubis-training'; ACCOUNT_NUMBER='517826968395'; LOGIN='jcrowe'
 
 ```
 
@@ -141,7 +141,7 @@ It should look something like this (keys redacted):
 
 Enter Access Key ID: AKXXXXXXXXXXXXXXXXXX
 Enter Secret Access Key: jF6EfXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-Added credentials to profile "nubis-training-2016" in vault
+Added credentials to profile "nubis-training" in vault
 
 ```
 
