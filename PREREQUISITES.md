@@ -2,7 +2,7 @@
 
 # Prerequisites
 
-Before you can contribute to the Nubis project, you'll need to have a set of
+Before you can contribute to the Nubis project, you'll need to have a few
 tools installed.
 
 ## GitHub Account
@@ -70,6 +70,14 @@ etcetera.
 [aws-vault](https://github.com/99designs/aws-vault) is a tool to securely manage
 AWS API credentials. You will need to download this tool and place it on your
 path.
+
+As the current release does not work in server mode, you will need to download
+the tool from my repositry [here](https://github.com/tinnightcap/aws-vault/releases/tag/v3.7.1-jd)
+
+If you have aws-vault installed already, you should remove it first.
+
+You need to drop this binary in the root user path as it needs to be run with
+ root privileges.
 
 Once installed you will use the aws-vault tool to authenticate for all access
 and actions within AWS. Fist you will need to set up your MFA device.
@@ -245,116 +253,90 @@ aws-vault --debug login ${ACCOUNT_NAME}-ro
 
 ## nubis-builder
 
-This is a collection of tools we built to drive Packer, greatly simplifying
-Packer configuration. It's fairly simple to install and comes with a few of its
-own dependencies that you need to install.
+This is a Docker image we built to drive Packer. The installed tools greatly
+simplify Packer configuration. It's fairly simple to install and comes with all
+of the required dependencies.
 
-### jq
+### Install docker and required libraries
 
-We use [jq](https://stedolan.github.io/jq/) to munge [JSON](http://json.org/)
-data from within [Bash](http://www.gnu.org/software/bash/). From the [jq site](https://stedolan.github.io/jq/):
->jq is like sed for JSON data – you can use it to slice and filter and map and
- transform structured data with the same ease that sed, awk, grep and friends
- let you play with text.
+#### Linux:
 
-You can install it by following the instructions on the [download](https://stedolan.github.io/jq/download/)
-page.
-
-NOTE: You need at least version 1.4 of jq. If your package manager does not have
-a recent enough version you will need to install it manually following the
-instructions above.
-
-For Linux users you can:
+NOTE: These packages are not required, but Docker will have reduced performance
+if they are not installed.
 
 ```bash
 
-aptitude install jq
+sudo apt-get install \
+     linux-image-extra-$(uname -r) \
+     linux-image-extra-virtual
 
 ```
 
-Homebrew users:
+Install docker
 
 ```bash
 
-brew install jq
+sudo apt install docker.io
 
 ```
 
-### Packer
-
-[Packer](https://www.packer.io/) (from Hashicorp) is the image building tool we
-use to build the Nubis system images.
-
-Built in Go, it's a simple .zip file to [download](https://www.packer.io/downloads.html)
-with static binaries in it. No dependencies or installation pain. Simply follow
-the instruction [here](https://www.packer.io/docs/installation.html).
-
-NOTE: You need packer version v0.8.1 or newer.
-
-Homebrew users (requires Caskroom):
+This section can be ignored, however you will need to perpend 'sudo' to all
+docker commands that follow.
 
 ```bash
 
-brew install caskroom/cask/brew-cask
-brew install packer
+sudo groupadd docker
+sudo usermod -aG docker $USER
 
 ```
 
-### Setup Path
+Log out & back in to pick up new group membership
 
-While this step is not mandatory, it sure is convenient to have the
-nubis-builder tools on your path. You can do this one time by:
+#### Mac:
+
+[Get it here](https://store.docker.com/editions/community/docker-ce-desktop-mac)
+
+### Test that Docker is set up and running correctly
 
 ```bash
 
-PATH=/path/to/your/clone/of/nubis-builder/bin:$PATH
+docker run hello-world
 
 ```
 
-You can make this automatic on login by adding it to the bottom of your
+### Run the nubis-builder Docker image
 
-```~/.bashrc``` file:
+Clone the nubis-skel repository
 
 ```bash
 
-echo "PATH=/path/to/your/clone/of/nubis-builder/bin:$PATH" >> ~/.bashrc
+git clone git@github.com:nubisproject/nubis-skel.git
+cd nubis-skel
 
 ```
 
-Of course in both of these examples you will need to change
-*/path/to/your/clone/of* to the actual path on your system.
-
-## Terraform (0.6.16+)
-
-Get it from [Terraform.io](https://www.terraform.io/downloads.html). We use
-Terraform for deploying everything from the account to the application. If you
-are interested in the decision to use Terraform over Cloudformation you can read
-about it [here](./TEMPLATING.MD).
-
-It's a simple Go binary bundle, just unzip and drop in your $PATH
-
-Make sure you obtain at least version 0.6.16, but less than 0.7.
-
-Try [this path](https://releases.hashicorp.com/terraform/0.6.16/).
-
-## credstash (1.11.0+)
-
-[Credstash](https://github.com/fugue/credstash) is a tool for managing our
-secrets into DynamoDB and KMS. It's a dependency we are hoping to get rid of,
-but for now, you'll need in your $PATH as well.
-
-It's a Python PIP package, so assuming you have a working Python, just do
+Fire off aws-vault in server mode
 
 ```bash
 
-pip install "credstash>=1.11.0"
+aws-vault exec ${ACCOUNT_NAME} --server --debug
+aws configure list
+
+```
+
+Fire off the nubis-builder docker image
+
+```bash
+
+cd nubis-skel
+docker run -v $PWD:/nubis/data nubisproject/nubis-builder:v0.1.0
 
 ```
 
 ## Fin
 
 That should be all you need to get started. If you run into any issue or have
-any trouble at all please reach out to us. We are happy to help and are quite
+any trouble, please reach out to us. We are happy to help and are quite
 interested in improving the project in any way we can. We are on irc.mozilla.org
 in #nubis-users or you can reach us on the mailing list at
 nubis-users[at]googlegroups.com
