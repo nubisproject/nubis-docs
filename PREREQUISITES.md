@@ -84,14 +84,6 @@ etcetera.
 AWS API credentials. You will need to download this tool and place it on your
 path.
 
-As the current release does not work in server mode, you will need to download
-the tool from my repositry [here](https://github.com/tinnightcap/aws-vault/releases/tag/v3.7.1-jd)
-
-If you have aws-vault installed already, you should remove it first.
-
-You need to drop this binary in the root user path as it needs to be run with
- root privileges.
-
 Once installed you will use the aws-vault tool to authenticate for all access
 and actions within AWS. Fist you will need to set up your MFA device.
 
