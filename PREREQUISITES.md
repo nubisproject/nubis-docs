@@ -373,11 +373,11 @@ Deploy nubis-skel to the training account
 exec ${ACCOUNT_NAME}-admin -- terraform get -update=true nubis/terraform
 aws-vault exec ${ACCOUNT_NAME}-admin -- \
     terraform plan \
-    --var-file=nubis/terraform/terraform.tfvars nubis/terraform
+    -var-file=nubis/terraform/terraform.tfvars nubis/terraform
 
 aws-vault exec ${ACCOUNT_NAME}-admin \
     -- terraform apply \
-    --var-file=nubis/terraform/terraform.tfvars nubis/terraform
+    -var-file=nubis/terraform/terraform.tfvars nubis/terraform
 
 ```
 
