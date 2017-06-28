@@ -310,6 +310,10 @@ brew install packer
 
 ```
 
+### Clone nubis-builder
+cd somewhere-suitable-in-your-home-dir
+git clone https://github.com/nubisproject/nubis-builder.git
+
 ### Setup Path
 
 While this step is not mandatory, it sure is convenient to have the
