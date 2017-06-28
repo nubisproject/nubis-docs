@@ -203,6 +203,16 @@ EOH
 
 ```
 
+If you haven't already configured awscli, you'll need to set a default region, run the aws configure command and specify only the region us-west-2:
+```bash
+
+$ aws configure
+AWS Access Key ID [None]:
+AWS Secret Access Key [None]:
+Default region name [None]: us-west-2
+
+```
+
 To test that everything has been set up correctly, run the following command:
 
 ```bash
