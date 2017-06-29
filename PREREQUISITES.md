@@ -107,7 +107,7 @@ export AWS_VAULT_BACKEND=kwallet
 ```
 
 The next thing I like to do is set up some local shell variables to make the
-following commands a bit simpler. Of course you will need to replace
+following commands a bit simpler. Of course you will **need to replace**
 the ```ACCOUNT_NAME```, ```ACCOUNT_NUMBER``` and ```LOGIN``` with the ones you
 received in the user credentials email.
 
@@ -356,9 +356,9 @@ Create terraform.tfvars from terraform.tfvars-dist and change values to these se
  - ssh_key_file = "/<path to your ssh key>/.ssh/id_rsa.pub"
  - nubis_sudo_groups = "<value provided by Nubis team>"
  - nubis_user_groups = "<value provided by Nubis team>"
- 
+
  The service_name and ssh_key_name must be unique in the Nubis account but otherwise do not matter.
- 
+
 ```bash
 
 cp nubis/terraform/terraform.tfvars-dist nubis/terraform/terraform.tfvars
@@ -370,7 +370,7 @@ Deploy nubis-skel to the training account
 
 ```bash
 
-exec ${ACCOUNT_NAME}-admin -- terraform get -update=true nubis/terraform
+aws-vault exec ${ACCOUNT_NAME}-admin -- terraform get -update=true nubis/terraform
 aws-vault exec ${ACCOUNT_NAME}-admin -- \
     terraform plan \
     -var-file=nubis/terraform/terraform.tfvars nubis/terraform
