@@ -2,7 +2,7 @@
 
 # Prerequisites
 
-Before you can contribute to the Nubis project, you'll need to have a set of
+Before you can contribute to the Nubis project, you'll need to have a few
 tools installed.
 
 ## GitHub Account
@@ -54,6 +54,19 @@ brew install awscli
 
 ```
 
+## Terraform (0.6.16+)
+
+Get it from [Terraform.io](https://www.terraform.io/downloads.html). We use
+Terraform for deploying everything from the account to the application. If you
+are interested in the decision to use Terraform over Cloudformation you can read
+about it [here](./TEMPLATING.MD).
+
+It's a simple Go binary bundle, just unzip and drop in your $PATH
+
+Make sure you obtain version 0.8.8.
+
+Try [this path](https://releases.hashicorp.com/terraform/0.8.8/).
+
 ## AWS Credentials
 
 In order to work with AWS you will need to set up some credentials. This is a
@@ -94,13 +107,13 @@ export AWS_VAULT_BACKEND=kwallet
 ```
 
 The next thing I like to do is set up some local shell variables to make the
-following commands a bit simpler. Of course you will need to replace
+following commands a bit simpler. Of course you will **need to replace**
 the ```ACCOUNT_NAME```, ```ACCOUNT_NUMBER``` and ```LOGIN``` with the ones you
 received in the user credentials email.
 
 ```bash
 
-ACCOUNT_NAME='nubis-training-2016'; ACCOUNT_NUMBER='517826968395'; LOGIN='jcrowe'
+ACCOUNT_NAME='nubis-training'; ACCOUNT_NUMBER='517826968395'; LOGIN='jcrowe'
 
 ```
 
@@ -120,7 +133,7 @@ It should look something like this (keys redacted):
 
 Enter Access Key ID: AKXXXXXXXXXXXXXXXXXX
 Enter Secret Access Key: jF6EfXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-Added credentials to profile "nubis-training-2016" in vault
+Added credentials to profile "nubis-training" in vault
 
 ```
 
@@ -255,120 +268,133 @@ aws-vault --debug login ${ACCOUNT_NAME}-ro
 
 ## nubis-builder
 
-This is a collection of tools we built to drive Packer, greatly simplifying
-Packer configuration. It's fairly simple to install and comes with a few of its
-own dependencies that you need to install.
+This is a Docker image we built to drive Packer. The installed tools greatly
+simplify Packer configuration. It's fairly simple to install and comes with all
+of the required dependencies.
 
-### jq
+### Install docker and required libraries
 
-We use [jq](https://stedolan.github.io/jq/) to munge [JSON](http://json.org/)
-data from within [Bash](http://www.gnu.org/software/bash/). From the [jq site](https://stedolan.github.io/jq/):
->jq is like sed for JSON data – you can use it to slice and filter and map and
- transform structured data with the same ease that sed, awk, grep and friends
- let you play with text.
+#### Linux
 
-You can install it by following the instructions on the [download](https://stedolan.github.io/jq/download/)
-page.
-
-NOTE: You need at least version 1.4 of jq. If your package manager does not have
-a recent enough version you will need to install it manually following the
-instructions above.
-
-For Linux users you can:
+NOTE: These packages are not required, but Docker will have reduced performance
+if they are not installed.
 
 ```bash
 
-aptitude install jq
+sudo apt-get install \
+     linux-image-extra-$(uname -r) \
+     linux-image-extra-virtual
 
 ```
 
-Homebrew users:
+Install docker
 
 ```bash
 
-brew install jq
+sudo apt install docker.io
 
 ```
 
-### Packer
-
-[Packer](https://www.packer.io/) (from Hashicorp) is the image building tool we
-use to build the Nubis system images.
-
-Built in Go, it's a simple .zip file to [download](https://www.packer.io/downloads.html)
-with static binaries in it. No dependencies or installation pain. Simply follow
-the instruction [here](https://www.packer.io/docs/installation.html).
-
-NOTE: You need packer version v0.8.1 or newer.
-
-Homebrew users (requires Caskroom):
+This section can be ignored, however you will need to perpend 'sudo' to all
+docker commands that follow.
 
 ```bash
 
-brew install caskroom/cask/brew-cask
-brew install packer
+sudo groupadd docker
+sudo usermod -aG docker $USER
 
 ```
 
-### Clone nubis-builder
-cd somewhere-suitable-in-your-home-dir
-git clone https://github.com/nubisproject/nubis-builder.git
+Log out & back in to pick up new group membership
 
-### Setup Path
 
-While this step is not mandatory, it sure is convenient to have the
-nubis-builder tools on your path. You can do this one time by:
+#### Mac:
+
+[Get it here](https://store.docker.com/editions/community/docker-ce-desktop-mac)
+
+### Test that Docker is set up and running correctly
 
 ```bash
 
-PATH=/path/to/your/clone/of/nubis-builder/bin:$PATH
+docker run hello-world
 
 ```
 
-You can make this automatic on login by adding it to the bottom of your
+### Run the nubis-builder Docker image
 
-```~/.bashrc``` file:
+Clone the nubis-skel repository
 
 ```bash
 
-echo "PATH=/path/to/your/clone/of/nubis-builder/bin:$PATH" >> ~/.bashrc
+git clone git@github.com:nubisproject/nubis-skel.git
+cd nubis-skel
 
 ```
 
-Of course in both of these examples you will need to change
-*/path/to/your/clone/of* to the actual path on your system.
-
-## Terraform (0.6.16+)
-
-Get it from [Terraform.io](https://www.terraform.io/downloads.html). We use
-Terraform for deploying everything from the account to the application. If you
-are interested in the decision to use Terraform over Cloudformation you can read
-about it [here](./TEMPLATING.MD).
-
-It's a simple Go binary bundle, just unzip and drop in your $PATH
-
-Make sure you obtain at least version 0.6.16, but less than 0.7.
-
-Try [this path](https://releases.hashicorp.com/terraform/0.6.16/).
-
-## credstash (1.11.0+)
-
-[Credstash](https://github.com/fugue/credstash) is a tool for managing our
-secrets into DynamoDB and KMS. It's a dependency we are hoping to get rid of,
-but for now, you'll need in your $PATH as well.
-
-It's a Python PIP package, so assuming you have a working Python, just do
+Set up docker variables file
 
 ```bash
 
-pip install "credstash>=1.11.0"
+DOCKER_CONFIG_FILE=~/.docker_env
+cat >>${DOCKER_CONFIG_FILE} <<EOH
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+AWS_SESSION_TOKEN
+AWS_SECURITY_TOKEN
+EOH
+
+```
+
+Fire off the nubis-builder docker image
+
+```bash
+
+aws-vault exec ${ACCOUNT_NAME}-admin -- \
+    docker run \
+    --env-file ~/.docker_env \
+    -e GIT_COMMIT_SHA=$(git rev-parse HEAD) \
+    -v $PWD:/nubis/data nubisproject/nubis-builder:v0.2.0
+
+```
+
+Create terraform.tfvars from terraform.tfvars-dist and change values to these settings:
+ - account = "nubis-training"
+ - region = "us-west-2"
+ - environment = "stage"
+ - service_name = "<username>-skel"
+ - ssh_key_name = "<username>-key"
+ - ssh_key_file = "/<path to your ssh key>/.ssh/id_rsa.pub"
+ - nubis_sudo_groups = "<value provided by Nubis team>"
+ - nubis_user_groups = "<value provided by Nubis team>"
+
+ The service_name and ssh_key_name must be unique in the Nubis account but otherwise do not matter.
+
+```bash
+
+cp nubis/terraform/terraform.tfvars-dist nubis/terraform/terraform.tfvars
+vim nubis/terraform/terraform.tfvars
+
+```
+
+Deploy nubis-skel to the training account
+
+```bash
+
+aws-vault exec ${ACCOUNT_NAME}-admin -- terraform get -update=true nubis/terraform
+aws-vault exec ${ACCOUNT_NAME}-admin -- \
+    terraform plan \
+    -var-file=nubis/terraform/terraform.tfvars nubis/terraform
+
+aws-vault exec ${ACCOUNT_NAME}-admin \
+    -- terraform apply \
+    -var-file=nubis/terraform/terraform.tfvars nubis/terraform
 
 ```
 
 ## Fin
 
 That should be all you need to get started. If you run into any issue or have
-any trouble at all please reach out to us. We are happy to help and are quite
+any trouble, please reach out to us. We are happy to help and are quite
 interested in improving the project in any way we can. We are on irc.mozilla.org
 in #nubis-users or you can reach us on the mailing list at
 nubis-users[at]googlegroups.com
