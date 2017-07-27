@@ -340,10 +340,10 @@ Fire off the nubis-builder docker image
 ```bash
 
 aws-vault exec ${ACCOUNT_NAME}-admin -- \
-    docker run \
+    docker run -u $UID:$(id -g) -it \
     --env-file ~/.docker_env \
     -e GIT_COMMIT_SHA=$(git rev-parse HEAD) \
-    -v $PWD:/nubis/data nubisproject/nubis-builder:v0.2.0
+    -v $PWD:/nubis/data nubisproject/nubis-builder:v0.3.0
 
 ```
 
