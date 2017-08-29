@@ -1,5 +1,50 @@
 # Change Log
 
+## [v1.5.1-doc1](https://github.com/nubisproject/nubis-docs/tree/v1.5.1-doc1) (2017-08-29)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.5.1...v1.5.1-doc1)
+
+**Merged pull requests:**
+
+- Updates for new nubis-deploy docker image [\#184](https://github.com/nubisproject/nubis-docs/pull/184) ([tinnightcap](https://github.com/tinnightcap))
+- Update doc to point to v0.4.0 docker image [\#179](https://github.com/nubisproject/nubis-docs/pull/179) ([limed](https://github.com/limed))
+- Update docker builder command [\#178](https://github.com/nubisproject/nubis-docs/pull/178) ([tinnightcap](https://github.com/tinnightcap))
+
+## [v1.5.1](https://github.com/nubisproject/nubis-docs/tree/v1.5.1) (2017-07-10)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.5.0...v1.5.1)
+
+**Closed issues:**
+
+- Tag v1.5.1 release [\#180](https://github.com/nubisproject/nubis-docs/issues/180)
+
+**Merged pull requests:**
+
+- Update CHANGELOG for v1.5.0 release \[skip ci\] [\#177](https://github.com/nubisproject/nubis-docs/pull/177) ([tinnightcap](https://github.com/tinnightcap))
+- Update docker image version [\#176](https://github.com/nubisproject/nubis-docs/pull/176) ([tinnightcap](https://github.com/tinnightcap))
+- bold emphasis, missing aws-vault and killed unnecessary whitespace [\#175](https://github.com/nubisproject/nubis-docs/pull/175) ([sidler-mozilla](https://github.com/sidler-mozilla))
+- Update PREREQUISITES.md [\#174](https://github.com/nubisproject/nubis-docs/pull/174) ([ziegeer](https://github.com/ziegeer))
+- Fixing a typo [\#173](https://github.com/nubisproject/nubis-docs/pull/173) ([limed](https://github.com/limed))
+
+## [v1.5.0](https://github.com/nubisproject/nubis-docs/tree/v1.5.0) (2017-06-28)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.4.2-docs1...v1.5.0)
+
+**Closed issues:**
+
+- Tag v1.5.0 release [\#166](https://github.com/nubisproject/nubis-docs/issues/166)
+- Tag v1.5.0 release [\#164](https://github.com/nubisproject/nubis-docs/issues/164)
+- Tag v1.5.0 release [\#160](https://github.com/nubisproject/nubis-docs/issues/160)
+
+**Merged pull requests:**
+
+- Update PREREQUISITES.md [\#171](https://github.com/nubisproject/nubis-docs/pull/171) ([ziegeer](https://github.com/ziegeer))
+- Update PREREQUISITES.md [\#170](https://github.com/nubisproject/nubis-docs/pull/170) ([ziegeer](https://github.com/ziegeer))
+- Remove -2016 from acct name [\#169](https://github.com/nubisproject/nubis-docs/pull/169) ([tinnightcap](https://github.com/tinnightcap))
+- Update to remove --server and add terraform [\#168](https://github.com/nubisproject/nubis-docs/pull/168) ([tinnightcap](https://github.com/tinnightcap))
+- Remove extra cd [\#167](https://github.com/nubisproject/nubis-docs/pull/167) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.5.0 release \[skip ci\] [\#165](https://github.com/nubisproject/nubis-docs/pull/165) ([tinnightcap](https://github.com/tinnightcap))
+- Add release presentation for v1.5.0 [\#163](https://github.com/nubisproject/nubis-docs/pull/163) ([tinnightcap](https://github.com/tinnightcap))
+- Merge v1.5.0 release into develop. \[skip ci\] [\#162](https://github.com/nubisproject/nubis-docs/pull/162) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.5.0 release \[skip ci\] [\#161](https://github.com/nubisproject/nubis-docs/pull/161) ([tinnightcap](https://github.com/tinnightcap))
+
 ## [v1.4.2-docs1](https://github.com/nubisproject/nubis-docs/tree/v1.4.2-docs1) (2017-06-15)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.4.2...v1.4.2-docs1)
 
