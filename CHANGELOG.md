@@ -3,8 +3,15 @@
 ## [v1.5.1-doc1](https://github.com/nubisproject/nubis-docs/tree/v1.5.1-doc1) (2017-08-29)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.5.1...v1.5.1-doc1)
 
+**Closed issues:**
+
+- Tag v1.5.1-doc1 release [\#185](https://github.com/nubisproject/nubis-docs/issues/185)
+
 **Merged pull requests:**
 
+- Merge  release into develop. \[skip ci\] [\#188](https://github.com/nubisproject/nubis-docs/pull/188) ([tinnightcap](https://github.com/tinnightcap))
+- Merge v1.5.1-doc1 release into develop. \[skip ci\] [\#187](https://github.com/nubisproject/nubis-docs/pull/187) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.5.1-doc1 release \[skip ci\] [\#186](https://github.com/nubisproject/nubis-docs/pull/186) ([tinnightcap](https://github.com/tinnightcap))
 - Updates for new nubis-deploy docker image [\#184](https://github.com/nubisproject/nubis-docs/pull/184) ([tinnightcap](https://github.com/tinnightcap))
 - Update doc to point to v0.4.0 docker image [\#179](https://github.com/nubisproject/nubis-docs/pull/179) ([limed](https://github.com/limed))
 - Update docker builder command [\#178](https://github.com/nubisproject/nubis-docs/pull/178) ([tinnightcap](https://github.com/tinnightcap))
