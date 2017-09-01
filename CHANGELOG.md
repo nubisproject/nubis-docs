@@ -1,14 +1,24 @@
 # Change Log
 
+## [v1.5.1-doc2](https://github.com/nubisproject/nubis-docs/tree/v1.5.1-doc2) (2017-09-01)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.5.1-doc1...v1.5.1-doc2)
+
+**Merged pull requests:**
+
+- Bump version number for nubis-deploy image [\#192](https://github.com/nubisproject/nubis-docs/pull/192) ([tinnightcap](https://github.com/tinnightcap))
+
 ## [v1.5.1-doc1](https://github.com/nubisproject/nubis-docs/tree/v1.5.1-doc1) (2017-08-29)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.5.1...v1.5.1-doc1)
 
 **Closed issues:**
 
+- Tag v1.5.1-doc1 release [\#189](https://github.com/nubisproject/nubis-docs/issues/189)
 - Tag v1.5.1-doc1 release [\#185](https://github.com/nubisproject/nubis-docs/issues/185)
 
 **Merged pull requests:**
 
+- Merge v1.5.1-doc1 release into develop. \[skip ci\] [\#191](https://github.com/nubisproject/nubis-docs/pull/191) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.5.1-doc1 release \[skip ci\] [\#190](https://github.com/nubisproject/nubis-docs/pull/190) ([tinnightcap](https://github.com/tinnightcap))
 - Merge  release into develop. \[skip ci\] [\#188](https://github.com/nubisproject/nubis-docs/pull/188) ([tinnightcap](https://github.com/tinnightcap))
 - Merge v1.5.1-doc1 release into develop. \[skip ci\] [\#187](https://github.com/nubisproject/nubis-docs/pull/187) ([tinnightcap](https://github.com/tinnightcap))
 - Update CHANGELOG for v1.5.1-doc1 release \[skip ci\] [\#186](https://github.com/nubisproject/nubis-docs/pull/186) ([tinnightcap](https://github.com/tinnightcap))
