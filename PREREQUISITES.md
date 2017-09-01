@@ -391,8 +391,8 @@ the nubis-skel application into the account.
 
 ```bash
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.2.0 plan
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.2.0 apply
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 plan
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 apply
 
 ```
 
@@ -412,7 +412,7 @@ To finish up, remove your application from the training account:
 
 ```bash
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.2.0 destroy
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 destroy
 
 ```
 

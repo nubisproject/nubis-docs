@@ -40,10 +40,10 @@ vault-exec "${NUBIS_DOCKER[@]}" -e GIT_COMMIT_SHA=$(git rev-parse HEAD) nubispro
 
 sshuttle -v --dns -r <username>@jumphost.stage.us-west-2.nubis-training.nubis.allizom.org 10.164.19.0/24
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.2.0 plan
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 plan
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.2.0 apply
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 apply
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.2.0 destroy
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 destroy
 
 ```
