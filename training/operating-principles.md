@@ -1,5 +1,3 @@
-﻿
-
 # New Operating Principles
 
 In the previous section we looked at some of the challenges we face in our
@@ -203,11 +201,11 @@ integer. The integers segments stand for MAJOR.MINOR.PATCH, where:
 * PATCH
   * Specific to fixing regressions or emergency, security related, update
 
-There is a -PRE_RELEASE option for development releases. Additionally there is a
-_BUILD_METADATA option available in cases where it is desirable to append a git
-hash or similar piece of identifying information.
+There is a `-PRE_RELEASE` option for development releases. Additionally there
+is a `_BUILD_METADATA` option available in cases where it is desirable to append
+a git hash or similar piece of identifying information.
 
-As a side note, we use an underscore ```_``` in place of a plus ```+``` due to
+As a side note, we use an underscore `_` in place of a plus `+` due to
 limitations in Amazon's IAM name spacing. This is the only place where we differ
 form Semantic versioning.
 

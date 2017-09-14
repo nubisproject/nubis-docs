@@ -1,5 +1,3 @@
-﻿
-
 # Demonstrations
 
 In this section we will walk through a few demonstrations describing how to

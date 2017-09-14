@@ -1,5 +1,3 @@
-﻿
-
 # Nubis - To the cloud, we are going
 
 ## A Design Manifesto, by Mozillians

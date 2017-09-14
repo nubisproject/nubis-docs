@@ -1,5 +1,3 @@
-﻿
-
 # Working Labs
 
 In this section we will be setting up our tool chain and then putting hands on

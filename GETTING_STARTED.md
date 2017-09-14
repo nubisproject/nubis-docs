@@ -1,5 +1,3 @@
-﻿
-
 # Getting started with the Nubis Project
 
 Welcome to the Nubis Project. We hope you will find that it meets your

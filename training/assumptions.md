@@ -1,5 +1,3 @@
-﻿
-
 # Assumptions
 
 For the sake of this training programe we are making a number of assumptions
