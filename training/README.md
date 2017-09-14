@@ -1,5 +1,3 @@
-﻿
-
 # Index
 
 Welcome to the Nubis training documentation. As of this writing this is very

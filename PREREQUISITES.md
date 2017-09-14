@@ -1,5 +1,3 @@
-﻿
-
 # Prerequisites
 
 Before you can contribute to the Nubis project, you'll need to have a few
@@ -12,7 +10,7 @@ containing The necessary information for you to access the account.
 
 The first thing I like to do is set up some local shell variables to make the
 following steps a bit simpler. Of course you will **need to replace** the
-```ACCOUNT_NAME```, ```ACCOUNT_NUMBER``` and ```LOGIN``` with the ones you
+`ACCOUNT_NAME`, `ACCOUNT_NUMBER` and `LOGIN` with the ones you
 received in the user credentials email.
 
 ```bash
@@ -89,7 +87,6 @@ receive an encrypted email containing a key pair.
 **DO NOT** check them into git, send them via unencrypted email, copy them into
 a pastebin, etcetera.
 
-
 ### aws-vault
 
 [aws-vault](https://github.com/99designs/aws-vault) is a tool to securely manage
@@ -110,7 +107,7 @@ aws-vault --version
 This should return something like ```v3.7.1```.
 
 If you are using linux you need to set your backend to use kwallet. I recommend
-placing this in one of your startup scripts, say ```~/.bashrc```:
+placing this in one of your startup scripts, say `~/.bashrc`:
 
 ```bash
 
@@ -151,7 +148,7 @@ aws iam create-virtual-mfa-device \
 ```
 
 You should see output similar to the following. The number here should
-correspond to the account number and the ```<login>``` portion of the serial
+correspond to the account number and the `<login>` portion of the serial
 number should be your user-name:
 
 ```bash
@@ -165,7 +162,7 @@ number should be your user-name:
 ```
 
 You will need to view the ${LOGIN}.png file and use it to configure your MFA
-application. If you have imagemagic installed you can try ```display $LOGIN.png```
+application. If you have imagemagic installed you can try `display $LOGIN.png`
 or just open it with any image viewer. I use the [duo mobile app](https://duo.com/solutions/features/two-factor-authentication-methods/duo-mobile),
 however the [google authenticator app](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en)
 works as well. Really, most MFA apps work here so if you have one you already
@@ -177,7 +174,7 @@ provide two sequential MFA codes. You get these codes from the MFA application
 you just set up.
 
 **NOTE:** The codes must be sequential and entered in the correct order in the
-following command. (Replace ```<code 1>``` and ```<code 2>``` with codes from
+following command. (Replace `<code 1>` and `<code 2>` with codes from
 your mfa app):
 
 ```bash
@@ -192,7 +189,7 @@ aws iam enable-mfa-device \
 ```
 
 You need to configure the AWS CLI tools to make use of the virtual MFA device.
-You can either add this to your ```~/.aws/config``` file manually or run the
+You can either add this to your `~/.aws/config` file manually or run the
 following bash snippet:
 
 ```bash
@@ -298,8 +295,7 @@ sudo usermod -aG docker $USER
 
 Log out & back in to pick up your new group membership.
 
-
-#### Mac:
+#### Mac
 
 [Get it here](https://store.docker.com/editions/community/docker-ce-desktop-mac)
 
@@ -365,7 +361,7 @@ vault-exec "${NUBIS_DOCKER[@]}" -e GIT_COMMIT_SHA=$(git rev-parse HEAD) nubispro
 ```
 
 Create a terraform.tfvars from terraform.tfvars-dist and change values to these
-settings (Be sure to replace all of the ```<variables>``` whit appropriate ones
+settings (Be sure to replace all of the `<variables>` whit appropriate ones
     for your application):
  - account = "nubis-training"
  - region = "us-west-2"

@@ -1,5 +1,3 @@
-﻿
-
 # Recommended Practices for Git & GitHub
 
 This document will walk you through some best practices that we recommend for

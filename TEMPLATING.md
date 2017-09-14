@@ -1,5 +1,3 @@
-﻿
-
 # Templating
 
 This document covers templating within the Nubis project. We have gone through a

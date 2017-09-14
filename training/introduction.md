@@ -1,5 +1,3 @@
-﻿
-
 # Introduction
 
 I am going to say some things today that are going to upset some people. I want

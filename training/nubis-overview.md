@@ -1,5 +1,3 @@
-﻿
-
 # Nubis Overview
 
 It is time to move past ideas and start talking about the project we are working

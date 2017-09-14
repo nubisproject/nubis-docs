@@ -1,5 +1,3 @@
-﻿
-
 # nubis-docs
 
 This repository is a collaborative documentation area for the Nubis project. The

@@ -1,5 +1,3 @@
-﻿
-
 # Nubis - Release Management
 
 This is a document that helps explain all the process involved in Release

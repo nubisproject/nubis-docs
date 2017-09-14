@@ -1,5 +1,3 @@
-﻿
-
 # Project Onboarding
 
 This document is hear to guide us through the process of on-boarding your

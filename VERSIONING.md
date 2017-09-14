@@ -1,5 +1,3 @@
-﻿
-
 # Versioning
 
 This document describes the versioning standard for the Nubis Project. All
