@@ -1,5 +1,3 @@
-﻿
-
 # Nubis-Skel Working Lab
 
 In this lab we will walk through obtaining a release from the nubis-skel
@@ -43,7 +41,7 @@ to do this. You should already have installed nubis-builder by following the
 instructions in the [prerequisites](https://github.com/Nubisproject/nubis-docs/blob/master/PREREQUISITES.md)
 document.
 
-```
+```bash
 
 nubis-builder build
 

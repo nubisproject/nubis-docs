@@ -1,5 +1,3 @@
-﻿
-
 # Nubis-Dpaste Working Lab
 
 In this lab we will walk through cloning the nubis-dpaste repository, making a
