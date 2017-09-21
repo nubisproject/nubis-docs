@@ -52,27 +52,27 @@ only spend a minute reviewing it here.
 
 1. Codebase
   - One codebase tracked in revision control, many deploys
-1. Dependencies
+2. Dependencies
   - Explicitly declare and isolate dependencies
-1. Config
+3. Config
   - Store config in the environment
-1. Backing services
+4. Backing services
   - Treat backing services as attached resources
-1. Build, release, run
+5. Build, release, run
   - Strictly separate build and run stages
-1. Processes
+6. Processes
   - Execute the app as one or more stateless processes
-1. Port binding
+7. Port binding
   - Export services via port binding
-1. Concurrency
+8. Concurrency
   - Scale out via the process model
-1. Disposability
+9. Disposability
   - Maximize robustness with fast startup and graceful shutdown
-1. Dev/prod parity
+10. Dev/prod parity
   - Keep development, staging, and production as similar as possible
-1. Logs
+11. Logs
   - Treat logs as event streams
-1. Admin processes
+12. Admin processes
   - Run admin/management tasks as one-off processes
 
 ## Agile Development
@@ -134,17 +134,17 @@ The [Agile Manifesto](http://www.agilemanifesto.org/principles.html) is based on
 twelve principles:
 
 1. Customer satisfaction by early and continuous delivery of valuable software
-1. Welcome changing requirements, even in late development
-1. Working software is delivered frequently (weeks rather than months)
-1. Close, daily cooperation between business people and developers
-1. Projects are built around motivated individuals, who should be trusted
-1. Face-to-face conversation is the best form of communication
-1. Working software is the principal measure of progress
-1. Sustainable development, able to maintain a constant pace
-1. Continuous attention to technical excellence and good design
-1. Simplicity—the art of maximizing the amount of work not done—is essential
-1. Best architectures, requirements, and designs emerge from self-organizing teams
-1. Regularly, the team reflects on how to become more effective, and adjusts
+2. Welcome changing requirements, even in late development
+3. Working software is delivered frequently (weeks rather than months)
+4. Close, daily cooperation between business people and developers
+5. Projects are built around motivated individuals, who should be trusted
+6. Face-to-face conversation is the best form of communication
+7. Working software is the principal measure of progress
+8. Sustainable development, able to maintain a constant pace
+9. Continuous attention to technical excellence and good design
+10. Simplicity—the art of maximizing the amount of work not done—is essential
+11. Best architectures, requirements, and designs emerge from self-organizing teams
+12. Regularly, the team reflects on how to become more effective, and adjusts
    accordingly
 
 There are a number of important concepts hidden in these principles:
@@ -519,4 +519,3 @@ complex as system creep across various IAAS, PAAS and SAAS providers.
 We have covered a lot of material that may be unfamiliar and possibly even
 uncomfortable. Lets take a little break now. When we return we will take a look
 at how we are applying these principles to solve some rather complex issues.
-

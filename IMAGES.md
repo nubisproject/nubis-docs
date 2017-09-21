@@ -1,4 +1,3 @@
-
 # Nubis - Building Quality Images
 
 Nubis is all about building system images in an automated and repeatable way.
