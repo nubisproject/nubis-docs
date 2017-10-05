@@ -1,5 +1,3 @@
-﻿
-
 # Nubis - Contributing
 
 The Nubis project is an open-source, collaborative project. And anybody is more

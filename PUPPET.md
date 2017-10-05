@@ -1,5 +1,3 @@
-﻿
-
 # Nubis - Puppet Best Practices
 
 We use [Packer](http://packer.io) to build our system images, but under the hood,

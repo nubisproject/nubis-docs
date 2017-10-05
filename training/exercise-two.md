@@ -1,5 +1,3 @@
-﻿
-
 # Exercise Two
 
 For this exercise we will take one or two of the topics we discovered in

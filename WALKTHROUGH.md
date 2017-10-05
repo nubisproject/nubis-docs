@@ -1,5 +1,3 @@
-﻿
-
 # Walk Through
 
 The process can seem a bit overwhelming and complicated at first. In an attempt

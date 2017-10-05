@@ -1,4 +1,3 @@
-
 # Networking in Nubis
 
 [from-one-to-manyevolving-vpc-design](http://www.slideshare.net/AmazonWebServices/from-one-to-manyevolving-vpc-design)

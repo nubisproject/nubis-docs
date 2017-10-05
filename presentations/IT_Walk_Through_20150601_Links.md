@@ -1,4 +1,3 @@
-
 # IT Walk Through 20150601 Links
 
 ## Slide 1

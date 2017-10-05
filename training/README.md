@@ -1,5 +1,3 @@
-﻿
-
 # Index
 
 Welcome to the Nubis training documentation. As of this writing this is very
@@ -52,7 +50,7 @@ person can work through at their own pace.
       * [Provide transparency into web operations systems and deployment methodologies](./introduction.md#provide-transparency-into-web-operations-systems-and-deployment-methodologies)
       * [Provide an open structure that enables us to better support the open web](./introduction.md#provide-an-open-structure-that-enables-us-to-better-support-the-open-web)
       * [Provide a better customer experience](./introduction.md#provide-a-better-customer-experience)
-1. [New operating principles](./operating-principles.md)
+2. [New operating principles](./operating-principles.md)
   * [New way of thinking](./operating-principles.md#new-way-of-thinking)
   * [Twelve Factor Review](./operating-principles.md#twelve-factor-review)
   * [Agile Development](./operating-principles.md#agile-development)
@@ -68,13 +66,13 @@ person can work through at their own pace.
   * [To Autoscale or Not to Autoscale](./operating-principles.md#to-autoscale-or-not-to-autoscale)
   * [Tainted Instances](./operating-principles.md#tainted-instances)
   * [Security Requirements](./operating-principles.md#security-requirements)
-1. [Exercise One](./exercise-one.md)
+3. [Exercise One](./exercise-one.md)
   * [Setup](./exercise-one.md#setup)
   * [Organize into groups](./exercise-one.md#organize-into_groups)
   * [Chose a Topic](./exercise-one.md#chose-a-topic)
   * [Discuss Improvements](./exercise-one.md#discuss-improvements)
   * [Presentations and Discussions](./exercise-one.md#presentations-and-discussions)
-1. [Nubis overview](./nubis-overview.md)
+4. [Nubis overview](./nubis-overview.md)
   * [What is Nubis](./nubis-overview.md#what-is-nubis)
     * [Standardized design](./nubis-overview.md#standardized-design)
     * [Security compliance](./nubis-overview.md#security-compliance)
@@ -135,16 +133,16 @@ person can work through at their own pace.
       * [nubis-base](./nubis-overview.md#nubis-base)
       * [nubis-builder](./nubis-overview.md#nubis-builder)
       * [Build Deploy Diagram](./nubis-overview.md#build-deploy-diagram)
-1. [Exercise Two](./exercise-two.md)
+5. [Exercise Two](./exercise-two.md)
   * [Chose a Topic](./exercise-two.md#chose-a-topic)
   * [Diagram the deployment](./exercise-two.md#diagram-the-deployment)
-1. [Demonstrations](./demonstrations.md)
+6. [Demonstrations](./demonstrations.md)
   * [Deploy a new application](./demonstrations.md#deploy-a-new-application)
   * [Deploy new application code](./demonstrations.md#deploy-new-application-code)
   * [Continuous Integration work-flow](./demonstrations.md#continuous-integration-work-flow)
   * [Upgrade an account](./demonstrations.md#upgrade-an-account)
   * [Troubleshooting](./demonstrations.md#troubleshooting)
-1. [Working Labs](./working-labs.md)
+7. [Working Labs](./working-labs.md)
   * [Setting up your local environment](./working-labs.md#setting-up-your-local-environment)
   * [Working with git & GitHub](./working-labs.md#working-with-git--github)
   * [Deploying the Nubis example application Dpaste](./working-labs.md#deploying-the-nubis-example-application-dpaste)
@@ -157,12 +155,12 @@ Here are some links to context relevant HOWTOs which are intended to guide you
 through many of the tasks you will need to perform using Nubis.
 
 1. How do I deploy an app
-1. How do I login to AWS?
+2. How do I login to AWS?
   * aws-vault overview (still might like a wrapper script for account setup)
-1. Walk-through dpaste deploy
-1. Build custom app with nubis-skel
-1. Detailed working example for git and GitHub
-1. How do I build an AMI?
+3. Walk-through dpaste deploy
+4. Build custom app with nubis-skel
+5. Detailed working example for git and GitHub
+6. How do I build an AMI?
   * Features of nubis-base
     * /etc/nubis.d/*
     * consul integration
@@ -173,18 +171,18 @@ through many of the tasks you will need to perform using Nubis.
   * nubis-builder overview
     * distrobutions supported
     * project.json file requirements and options
-1. How do I launch a jumphost?
-1. How do I access instances
-1. What is the meaning of immutable
-1. What happens when my instance is marked as tainted?
-1. How does monitoring work in AWS?
-1. How do I upgrade my account to Nubis latest?
-1. Terraform overview
-1. Consul overview
-1. Fluent overview
-1. Proxy overview (including nat)
-1. Database admin node
-1. How do I add and remove users from my account
+7. How do I launch a jumphost?
+8. How do I access instances
+9. What is the meaning of immutable
+10. What happens when my instance is marked as tainted?
+11. How does monitoring work in AWS?
+12. How do I upgrade my account to Nubis latest?
+13. Terraform overview
+14. Consul overview
+15. Fluent overview
+16. Proxy overview (including nat)
+17. Database admin node
+18. How do I add and remove users from my account
   * Levels of user permissions
 
 ## Technical Documents (Design docs)

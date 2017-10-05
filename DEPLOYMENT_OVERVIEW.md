@@ -1,5 +1,3 @@
-﻿
-
 # Deployment Overview
 
 A Nubis Account Deployment consists of a number of standard services and

@@ -1,5 +1,3 @@
-﻿
-
 # Project Onboarding
 
 This document is hear to guide us through the process of on-boarding your
@@ -10,16 +8,16 @@ application in AWS using the [Nubis](https://github.com/Nubisproject) project.
 The steps we will take during this process are:
 
 1. You [gather information](PROJECT_ONBOARDING.md#gather-information)
-1. We [create your AWS account](PROJECT_ONBOARDING.md#create-account)
+2. We [create your AWS account](PROJECT_ONBOARDING.md#create-account)
    in the Sandbox
-1. You [generate your AWS API keys](PROJECT_ONBOARDING.md#generate-api-keys)
-1. Everyone [meets](PROJECT_ONBOARDING.md#meeting-time) to discuss architectural
+3. You [generate your AWS API keys](PROJECT_ONBOARDING.md#generate-api-keys)
+4. Everyone [meets](PROJECT_ONBOARDING.md#meeting-time) to discuss architectural
    requirements / design
-1. You [build out](PROJECT_ONBOARDING.md#application-build-out) your application
+5. You [build out](PROJECT_ONBOARDING.md#application-build-out) your application
    in the Sandbox
-1. You initiate the [promotion to Dev](PROJECT_ONBOARDING.md#promote-to-dev)
+6. You initiate the [promotion to Dev](PROJECT_ONBOARDING.md#promote-to-dev)
    process
-1. You initiate the [promotion to Prod](PROJECT_ONBOARDING.md#promote-to-prod)
+7. You initiate the [promotion to Prod](PROJECT_ONBOARDING.md#promote-to-prod)
    process
 
 ## Gather Information
@@ -40,8 +38,8 @@ document.
 The information we need from you is:
 
 1. Name of your project (AKA the "Service Name") [found here](https://inventory.mozilla.org/en-US/core/service/)
-1. Email address of the ["Technical Owner"](link to email address requirements)
-1. List of people who should attend the kickoff Meeting
+2. Email address of the ["Technical Owner"](link to email address requirements)
+3. List of people who should attend the kickoff Meeting
 
 ## Create Account
 

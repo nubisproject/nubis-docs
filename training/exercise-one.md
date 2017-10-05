@@ -1,5 +1,3 @@
-﻿
-
 # Exercise One
 
 For this exercise the participants will break up into small groups. Then they
