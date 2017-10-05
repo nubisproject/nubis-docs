@@ -1,10 +1,25 @@
 # Change Log
 
-## [v1.5.1-doc2](https://github.com/nubisproject/nubis-docs/tree/v1.5.1-doc2) (2017-09-01)
-[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.5.1-doc1...v1.5.1-doc2)
+## [v2.0.0](https://github.com/nubisproject/nubis-docs/tree/v2.0.0) (2017-10-05)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.5.1-doc2...v2.0.0)
 
 **Merged pull requests:**
 
+- Fixing lint checks [\#198](https://github.com/nubisproject/nubis-docs/pull/198) ([tinnightcap](https://github.com/tinnightcap))
+- Update nubis-travis to v1.4.0 [\#197](https://github.com/nubisproject/nubis-docs/pull/197) ([tinnightcap](https://github.com/tinnightcap))
+- Migrate to mozilla slack [\#196](https://github.com/nubisproject/nubis-docs/pull/196) ([tinnightcap](https://github.com/tinnightcap))
+
+## [v1.5.1-doc2](https://github.com/nubisproject/nubis-docs/tree/v1.5.1-doc2) (2017-09-01)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.5.1-doc1...v1.5.1-doc2)
+
+**Closed issues:**
+
+- Tag v1.5.1-doc2 release [\#193](https://github.com/nubisproject/nubis-docs/issues/193)
+
+**Merged pull requests:**
+
+- Merge v1.5.1-doc2 release into develop. \[skip ci\] [\#195](https://github.com/nubisproject/nubis-docs/pull/195) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.5.1-doc2 release \[skip ci\] [\#194](https://github.com/nubisproject/nubis-docs/pull/194) ([tinnightcap](https://github.com/tinnightcap))
 - Bump version number for nubis-deploy image [\#192](https://github.com/nubisproject/nubis-docs/pull/192) ([tinnightcap](https://github.com/tinnightcap))
 
 ## [v1.5.1-doc1](https://github.com/nubisproject/nubis-docs/tree/v1.5.1-doc1) (2017-08-29)
