@@ -1,14 +1,24 @@
 # Change Log
 
 ## [v2.0.0](https://github.com/nubisproject/nubis-docs/tree/v2.0.0) (2017-10-05)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.0.0...v2.0.0)
+
+**Merged pull requests:**
+
+- Fixing a couple typos and removing a couple dead links. [\#205](https://github.com/nubisproject/nubis-docs/pull/205) ([cvalaas](https://github.com/cvalaas))
+
+## [v2.0.0](https://github.com/nubisproject/nubis-docs/tree/v2.0.0) (2017-10-05)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.5.1-doc2...v2.0.0)
 
 **Closed issues:**
 
+- Tag v2.0.0 release [\#202](https://github.com/nubisproject/nubis-docs/issues/202)
 - Tag v2.0.0 release [\#199](https://github.com/nubisproject/nubis-docs/issues/199)
 
 **Merged pull requests:**
 
+- Merge v2.0.0 release into develop. \[skip ci\] [\#204](https://github.com/nubisproject/nubis-docs/pull/204) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v2.0.0 release \[skip ci\] [\#203](https://github.com/nubisproject/nubis-docs/pull/203) ([tinnightcap](https://github.com/tinnightcap))
 - Merge v2.0.0 release into develop. \[skip ci\] [\#201](https://github.com/nubisproject/nubis-docs/pull/201) ([tinnightcap](https://github.com/tinnightcap))
 - Update CHANGELOG for v2.0.0 release \[skip ci\] [\#200](https://github.com/nubisproject/nubis-docs/pull/200) ([tinnightcap](https://github.com/tinnightcap))
 - Fixing lint checks [\#198](https://github.com/nubisproject/nubis-docs/pull/198) ([tinnightcap](https://github.com/tinnightcap))
