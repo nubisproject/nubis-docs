@@ -3,8 +3,14 @@
 ## [v2.0.0](https://github.com/nubisproject/nubis-docs/tree/v2.0.0) (2017-10-05)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v1.5.1-doc2...v2.0.0)
 
+**Closed issues:**
+
+- Tag v2.0.0 release [\#199](https://github.com/nubisproject/nubis-docs/issues/199)
+
 **Merged pull requests:**
 
+- Merge v2.0.0 release into develop. \[skip ci\] [\#201](https://github.com/nubisproject/nubis-docs/pull/201) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v2.0.0 release \[skip ci\] [\#200](https://github.com/nubisproject/nubis-docs/pull/200) ([tinnightcap](https://github.com/tinnightcap))
 - Fixing lint checks [\#198](https://github.com/nubisproject/nubis-docs/pull/198) ([tinnightcap](https://github.com/tinnightcap))
 - Update nubis-travis to v1.4.0 [\#197](https://github.com/nubisproject/nubis-docs/pull/197) ([tinnightcap](https://github.com/tinnightcap))
 - Migrate to mozilla slack [\#196](https://github.com/nubisproject/nubis-docs/pull/196) ([tinnightcap](https://github.com/tinnightcap))
