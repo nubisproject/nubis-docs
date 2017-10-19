@@ -356,7 +356,7 @@ deploy:
 
 ```bash
 
-vault-exec "${NUBIS_DOCKER[@]}" -e GIT_COMMIT_SHA=$(git rev-parse HEAD) nubisproject/nubis-builder:v0.5.0
+vault-exec "${NUBIS_DOCKER[@]}" -e GIT_COMMIT_SHA=$(git rev-parse HEAD) nubisproject/nubis-builder:v0.7.0
 
 ```
 
@@ -387,8 +387,8 @@ the nubis-skel application into the account.
 
 ```bash
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 plan
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 apply
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.4.0 plan
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.4.0 apply
 
 ```
 
@@ -408,7 +408,7 @@ To finish up, remove your application from the training account:
 
 ```bash
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 destroy
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.4.0 destroy
 
 ```
 
