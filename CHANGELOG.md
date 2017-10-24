@@ -1,5 +1,12 @@
 # Change Log
 
+## [v2.0.2](https://github.com/nubisproject/nubis-docs/tree/v2.0.2) (2017-10-24)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.0.1...v2.0.2)
+
+**Merged pull requests:**
+
+- Update versions for docker images [\#215](https://github.com/nubisproject/nubis-docs/pull/215) ([tinnightcap](https://github.com/tinnightcap))
+
 ## [v2.0.1](https://github.com/nubisproject/nubis-docs/tree/v2.0.1) (2017-10-13)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.0.0...v2.0.1)
 
@@ -9,9 +16,12 @@
 - \[meta\] Get rid of CloudFormation [\#121](https://github.com/nubisproject/nubis-docs/issues/121)
 - \[meta\] Get rid of DataDog [\#120](https://github.com/nubisproject/nubis-docs/issues/120)
 - Document --debug tricks for Packer and nubis-builder [\#45](https://github.com/nubisproject/nubis-docs/issues/45)
+- Tag v2.0.1 release [\#211](https://github.com/nubisproject/nubis-docs/issues/211)
 
 **Merged pull requests:**
 
+- Merge v2.0.1 release into develop. \[skip ci\] [\#213](https://github.com/nubisproject/nubis-docs/pull/213) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v2.0.1 release \[skip ci\] [\#212](https://github.com/nubisproject/nubis-docs/pull/212) ([tinnightcap](https://github.com/tinnightcap))
 - Bumping for nubis-builder [\#210](https://github.com/nubisproject/nubis-docs/pull/210) ([limed](https://github.com/limed))
 - Add v2.0.0 release presentation [\#209](https://github.com/nubisproject/nubis-docs/pull/209) ([tinnightcap](https://github.com/tinnightcap))
 
