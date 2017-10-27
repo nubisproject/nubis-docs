@@ -29,7 +29,7 @@ NUBIS_DOCKER=( 'docker' 'run' \
 
 ```bash
 
-vault-exec "${NUBIS_DOCKER[@]}" -e GIT_COMMIT_SHA=$(git rev-parse HEAD) nubisproject/nubis-builder:v0.4.0
+vault-exec "${NUBIS_DOCKER[@]}" -e GIT_COMMIT_SHA=$(git rev-parse HEAD) nubisproject/nubis-builder:v0.5.0
 
 ```
 
