@@ -218,7 +218,7 @@ To test that everything has been set up correctly, run the following command:
 
 ```bash
 
-vault-exec aws ec2 describe-regions
+aws-vault exec -n ${ACCOUNT_NAME}-admin -- aws ec2 describe-regions
 
 ```
 
@@ -251,6 +251,14 @@ running this command. It should open a new tab in your browser:
 ```bash
 
 aws-vault --debug login ${ACCOUNT_NAME}-ro
+
+```
+
+For future convenience, add this to your .bashrc:
+
+```bash
+
+alias vault-exec="aws-vault exec ${ACCOUNT_NAME}-admin --"
 
 ```
 
