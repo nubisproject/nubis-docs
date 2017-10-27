@@ -4,7 +4,7 @@ We use [Packer](http://packer.io) to build our system images, but under the hood
 we use puppet-masterless to do the heavy lifting.
 
 First, let's be clear, you do not have to use puppet at all to build images, you
-could simply rely on packer's provisionners, copying files to the image and
+could simply rely on packer's provisioners, copying files to the image and
 running arbitrary shell commands.
 
 However, that is not the recommended mechanism to deliver quality Nubis images.
