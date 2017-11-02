@@ -218,7 +218,7 @@ To test that everything has been set up correctly, run the following command:
 
 ```bash
 
-vault-exec aws ec2 describe-regions
+aws-vault exec -n ${ACCOUNT_NAME}-admin -- aws ec2 describe-regions
 
 ```
 
@@ -251,6 +251,14 @@ running this command. It should open a new tab in your browser:
 ```bash
 
 aws-vault --debug login ${ACCOUNT_NAME}-ro
+
+```
+
+For future convenience, add this to your .bashrc:
+
+```bash
+
+alias vault-exec="aws-vault exec ${ACCOUNT_NAME}-admin --"
 
 ```
 
@@ -356,7 +364,7 @@ deploy:
 
 ```bash
 
-vault-exec "${NUBIS_DOCKER[@]}" -e GIT_COMMIT_SHA=$(git rev-parse HEAD) nubisproject/nubis-builder:v0.5.0
+vault-exec "${NUBIS_DOCKER[@]}" -e GIT_COMMIT_SHA=$(git rev-parse HEAD) nubisproject/nubis-builder:v0.7.0
 
 ```
 
@@ -387,8 +395,8 @@ the nubis-skel application into the account.
 
 ```bash
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 plan
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 apply
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.4.0 plan
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.4.0 apply
 
 ```
 
@@ -408,7 +416,7 @@ To finish up, remove your application from the training account:
 
 ```bash
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 destroy
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.4.0 destroy
 
 ```
 

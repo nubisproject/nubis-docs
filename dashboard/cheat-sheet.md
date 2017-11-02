@@ -29,7 +29,7 @@ NUBIS_DOCKER=( 'docker' 'run' \
 
 ```bash
 
-vault-exec "${NUBIS_DOCKER[@]}" -e GIT_COMMIT_SHA=$(git rev-parse HEAD) nubisproject/nubis-builder:v0.5.0
+vault-exec "${NUBIS_DOCKER[@]}" -e GIT_COMMIT_SHA=$(git rev-parse HEAD) nubisproject/nubis-builder:v0.7.0
 
 ```
 
@@ -41,10 +41,10 @@ sshuttle -v --dns -r \
     <username>@jumphost.stage.us-west-2.nubis-training.nubis.allizom.org \
     10.164.19.0/24
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 plan
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.4.0 plan
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 apply
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.4.0 apply
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.3.0 destroy
+vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.4.0 destroy
 
 ```
