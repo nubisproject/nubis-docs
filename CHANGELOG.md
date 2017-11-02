@@ -1,10 +1,23 @@
 # Change Log
 
-## [v2.0.2](https://github.com/nubisproject/nubis-docs/tree/v2.0.2) (2017-10-24)
-[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.0.1...v2.0.2)
+## [v2.0.3](https://github.com/nubisproject/nubis-docs/tree/v2.0.3) (2017-11-02)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.0.2...v2.0.3)
 
 **Merged pull requests:**
 
+- PREREQs docs fix [\#219](https://github.com/nubisproject/nubis-docs/pull/219) ([cvalaas](https://github.com/cvalaas))
+
+## [v2.0.2](https://github.com/nubisproject/nubis-docs/tree/v2.0.2) (2017-10-24)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.0.1...v2.0.2)
+
+**Closed issues:**
+
+- Tag v2.0.2 release [\#216](https://github.com/nubisproject/nubis-docs/issues/216)
+
+**Merged pull requests:**
+
+- Merge v2.0.2 release into develop. \[skip ci\] [\#218](https://github.com/nubisproject/nubis-docs/pull/218) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v2.0.2 release \[skip ci\] [\#217](https://github.com/nubisproject/nubis-docs/pull/217) ([tinnightcap](https://github.com/tinnightcap))
 - Update versions for docker images [\#215](https://github.com/nubisproject/nubis-docs/pull/215) ([tinnightcap](https://github.com/tinnightcap))
 
 ## [v2.0.1](https://github.com/nubisproject/nubis-docs/tree/v2.0.1) (2017-10-13)
