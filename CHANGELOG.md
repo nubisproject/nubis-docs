@@ -1,10 +1,27 @@
 # Change Log
 
+## [v2.1.0-rc1](https://github.com/nubisproject/nubis-docs/tree/v2.1.0-rc1) (2017-12-07)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.0.3...v2.1.0-rc1)
+
+**Implemented enhancements:**
+
+- \[meta\] Upgrade Ubuntu to Xenial [\#119](https://github.com/nubisproject/nubis-docs/issues/119)
+
+**Closed issues:**
+
+- Tag v2.1.0-rc1 release [\#223](https://github.com/nubisproject/nubis-docs/issues/223)
+
 ## [v2.0.3](https://github.com/nubisproject/nubis-docs/tree/v2.0.3) (2017-11-02)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.0.2...v2.0.3)
 
+**Closed issues:**
+
+- Tag v2.0.3 release [\#220](https://github.com/nubisproject/nubis-docs/issues/220)
+
 **Merged pull requests:**
 
+- Merge v2.0.3 release into develop. \[skip ci\] [\#222](https://github.com/nubisproject/nubis-docs/pull/222) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v2.0.3 release \[skip ci\] [\#221](https://github.com/nubisproject/nubis-docs/pull/221) ([tinnightcap](https://github.com/tinnightcap))
 - PREREQs docs fix [\#219](https://github.com/nubisproject/nubis-docs/pull/219) ([cvalaas](https://github.com/cvalaas))
 
 ## [v2.0.2](https://github.com/nubisproject/nubis-docs/tree/v2.0.2) (2017-10-24)
