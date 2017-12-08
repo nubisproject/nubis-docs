@@ -9,12 +9,15 @@
 
 **Closed issues:**
 
+- Tag v2.1.0-rc1 release [\#231](https://github.com/nubisproject/nubis-docs/issues/231)
 - Tag v2.1.0-rc1 release [\#228](https://github.com/nubisproject/nubis-docs/issues/228)
 - Tag v2.1.0-rc1 release [\#225](https://github.com/nubisproject/nubis-docs/issues/225)
 - Tag v2.1.0-rc1 release [\#223](https://github.com/nubisproject/nubis-docs/issues/223)
 
 **Merged pull requests:**
 
+- Merge v2.1.0-rc1 release into develop. \[skip ci\] [\#233](https://github.com/nubisproject/nubis-docs/pull/233) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v2.1.0-rc1 release \[skip ci\] [\#232](https://github.com/nubisproject/nubis-docs/pull/232) ([tinnightcap](https://github.com/tinnightcap))
 - Merge v2.1.0-rc1 release into develop. \[skip ci\] [\#230](https://github.com/nubisproject/nubis-docs/pull/230) ([tinnightcap](https://github.com/tinnightcap))
 - Update CHANGELOG for v2.1.0-rc1 release \[skip ci\] [\#229](https://github.com/nubisproject/nubis-docs/pull/229) ([tinnightcap](https://github.com/tinnightcap))
 - Merge v2.1.0-rc1 release into develop. \[skip ci\] [\#227](https://github.com/nubisproject/nubis-docs/pull/227) ([tinnightcap](https://github.com/tinnightcap))
