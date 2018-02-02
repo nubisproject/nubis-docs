@@ -1,5 +1,18 @@
 # Change Log
 
+## [v2.0.4](https://github.com/nubisproject/nubis-docs/tree/v2.0.4) (2017-12-08)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.1.0-rc1...v2.0.4)
+
+**Closed issues:**
+
+- Tag v2.0.4 release [\#237](https://github.com/nubisproject/nubis-docs/issues/237)
+- Tag v2.0.4 release [\#236](https://github.com/nubisproject/nubis-docs/issues/236)
+- Tag v2.0.4 release [\#234](https://github.com/nubisproject/nubis-docs/issues/234)
+
+**Merged pull requests:**
+
+- Update CHANGELOG for v2.0.4 release \[skip ci\] [\#235](https://github.com/nubisproject/nubis-docs/pull/235) ([tinnightcap](https://github.com/tinnightcap))
+
 ## [v2.1.0-rc1](https://github.com/nubisproject/nubis-docs/tree/v2.1.0-rc1) (2017-12-07)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.0.3...v2.1.0-rc1)
 
