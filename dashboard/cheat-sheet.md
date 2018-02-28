@@ -6,30 +6,13 @@ as many of them require additional setup or configuration steps.
 
 ## Working in a sandbox account
 
-Prior to running these commands you should consult the [prerequisites doc](https://github.com/nubisproject/nubis-docs/blob/develop/PREREQUISITES.md)
-
-### Setup the shell
-
-```bash
-
-ACCOUNT_NAME='nubis-training'; ACCOUNT_NUMBER='517826968395'; LOGIN='<login>'
-
-alias vault-exec="aws-vault exec ${ACCOUNT_NAME}-admin --"
-
-NUBIS_DOCKER=( 'docker' 'run' \
-                '-u' "$UID:$(id -g)" \
-                '--interactive' \
-                '--tty' \
-                '--env-file' "$(echo ~)/.docker_env" \
-                '-v' "$PWD:/nubis/data" )
-
-```
+Prior to running these commands you should consult the [getting started guide](https://github.com/nubisproject/nubis-docs/blob/develop/GETTING_STARTED.md)
 
 ### Building an AMI
 
 ```bash
 
-vault-exec "${NUBIS_DOCKER[@]}" -e GIT_COMMIT_SHA=$(git rev-parse HEAD) nubisproject/nubis-builder:v0.7.0
+nubis-ctl build
 
 ```
 
@@ -37,14 +20,18 @@ vault-exec "${NUBIS_DOCKER[@]}" -e GIT_COMMIT_SHA=$(git rev-parse HEAD) nubispro
 
 ```bash
 
-sshuttle -v --dns -r \
-    <username>@jumphost.stage.us-west-2.nubis-training.nubis.allizom.org \
-    10.164.19.0/24
+nubis-ctl deploy plan
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.4.0 plan
+nubis-ctl deploy apply
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.4.0 apply
+nubis-ctl deploy destroy
 
-vault-exec "${NUBIS_DOCKER[@]}" nubisproject/nubis-deploy:v0.4.0 destroy
+```
+
+### Lint your code
+
+```bash
+
+nubis-ctl lint
 
 ```
