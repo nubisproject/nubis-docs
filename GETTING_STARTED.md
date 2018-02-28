@@ -1,4 +1,4 @@
-# Getting Startes
+# Getting Started
 
 Before you can contribute to the Nubis project, you'll need to have a few
 tools installed and configured.
