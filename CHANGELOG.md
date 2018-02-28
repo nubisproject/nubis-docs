@@ -1,5 +1,33 @@
 # Change Log
 
+## [v2.1.0-doc1](https://github.com/nubisproject/nubis-docs/tree/v2.1.0-doc1) (2018-02-28)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.1.0...v2.1.0-doc1)
+
+**Closed issues:**
+
+- Problem running nubisproject/nubis-builder container [\#238](https://github.com/nubisproject/nubis-docs/issues/238)
+
+**Merged pull requests:**
+
+- Update documentation to use nubis-ctl [\#243](https://github.com/nubisproject/nubis-docs/pull/243) ([tinnightcap](https://github.com/tinnightcap))
+- Update travis checks [\#242](https://github.com/nubisproject/nubis-docs/pull/242) ([tinnightcap](https://github.com/tinnightcap))
+
+## [v2.1.0](https://github.com/nubisproject/nubis-docs/tree/v2.1.0) (2018-02-02)
+[Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.0.4...v2.1.0)
+
+**Implemented enhancements:**
+
+- \[meta\] Upgrade Ubuntu to Xenial [\#119](https://github.com/nubisproject/nubis-docs/issues/119)
+
+**Closed issues:**
+
+- Tag v2.1.0 release [\#239](https://github.com/nubisproject/nubis-docs/issues/239)
+
+**Merged pull requests:**
+
+- Update CHANGELOG for v2.1.0 release \[skip ci\] [\#241](https://github.com/nubisproject/nubis-docs/pull/241) ([nubis-automation](https://github.com/nubis-automation))
+- Update CHANGELOG for v2.1.0 release \[skip ci\] [\#240](https://github.com/nubisproject/nubis-docs/pull/240) ([nubis-automation](https://github.com/nubis-automation))
+
 ## [v2.0.4](https://github.com/nubisproject/nubis-docs/tree/v2.0.4) (2017-12-08)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.1.0-rc1...v2.0.4)
 
@@ -15,10 +43,6 @@
 
 ## [v2.1.0-rc1](https://github.com/nubisproject/nubis-docs/tree/v2.1.0-rc1) (2017-12-07)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.0.3...v2.1.0-rc1)
-
-**Implemented enhancements:**
-
-- \[meta\] Upgrade Ubuntu to Xenial [\#119](https://github.com/nubisproject/nubis-docs/issues/119)
 
 **Closed issues:**
 
