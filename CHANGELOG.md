@@ -6,9 +6,12 @@
 **Closed issues:**
 
 - Problem running nubisproject/nubis-builder container [\#238](https://github.com/nubisproject/nubis-docs/issues/238)
+- Tag v2.1.0-doc1 release [\#244](https://github.com/nubisproject/nubis-docs/issues/244)
 
 **Merged pull requests:**
 
+- Update CHANGELOG for v2.1.0-doc1 release \[skip ci\] [\#246](https://github.com/nubisproject/nubis-docs/pull/246) ([nubis-automation](https://github.com/nubis-automation))
+- Update CHANGELOG for v2.1.0-doc1 release \[skip ci\] [\#245](https://github.com/nubisproject/nubis-docs/pull/245) ([nubis-automation](https://github.com/nubis-automation))
 - Update documentation to use nubis-ctl [\#243](https://github.com/nubisproject/nubis-docs/pull/243) ([tinnightcap](https://github.com/tinnightcap))
 - Update travis checks [\#242](https://github.com/nubisproject/nubis-docs/pull/242) ([tinnightcap](https://github.com/tinnightcap))
 
