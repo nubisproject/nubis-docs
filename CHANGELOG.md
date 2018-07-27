@@ -1,16 +1,19 @@
 # Change Log
 
-## [v2.3.0](https://github.com/nubisproject/nubis-docs/tree/v2.3.0) (2018-07-19)
+## [v2.3.0](https://github.com/nubisproject/nubis-docs/tree/v2.3.0) (2018-07-24)
 [Full Changelog](https://github.com/nubisproject/nubis-docs/compare/v2.2.0...v2.3.0)
 
 **Closed issues:**
 
 - Tag v2.2.0 release [\#247](https://github.com/nubisproject/nubis-docs/issues/247)
+- Tag v2.3.0 release [\#256](https://github.com/nubisproject/nubis-docs/issues/256)
 - Tag v2.3.0 release [\#253](https://github.com/nubisproject/nubis-docs/issues/253)
 - Tag v2.3.0 release [\#250](https://github.com/nubisproject/nubis-docs/issues/250)
 
 **Merged pull requests:**
 
+- Update CHANGELOG for v2.3.0 release \[skip ci\] [\#258](https://github.com/nubisproject/nubis-docs/pull/258) ([nubis-automation](https://github.com/nubis-automation))
+- Update CHANGELOG for v2.3.0 release \[skip ci\] [\#257](https://github.com/nubisproject/nubis-docs/pull/257) ([nubis-automation](https://github.com/nubis-automation))
 - Update CHANGELOG for v2.3.0 release \[skip ci\] [\#255](https://github.com/nubisproject/nubis-docs/pull/255) ([nubis-automation](https://github.com/nubis-automation))
 - Update CHANGELOG for v2.3.0 release \[skip ci\] [\#254](https://github.com/nubisproject/nubis-docs/pull/254) ([nubis-automation](https://github.com/nubis-automation))
 - Update CHANGELOG for v2.3.0 release \[skip ci\] [\#252](https://github.com/nubisproject/nubis-docs/pull/252) ([nubis-automation](https://github.com/nubis-automation))
